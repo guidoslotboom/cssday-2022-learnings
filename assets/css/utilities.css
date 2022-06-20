@@ -54,7 +54,7 @@
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
     .col-span-1,
     .col-span-2,
     .col-span-3,

@@ -46,45 +46,69 @@ h4, h5, h6 {
 
 p {
     font-size: clamp(1.6rem, 0.5vw + var(--fluid-unit), 1.8rem);
+    line-height: 1.5;
+}
+
+p.text-lg {
+    font-size: clamp(1.7rem, 0.75vw + var(--fluid-unit), 2.0rem);
+}
+
+p.text-sm {
+    font-size: clamp(1.4rem, 0.4vw + var(--fluid-unit), 1.6rem);
 }
 
 /* */
 
-.wrapper > p + p {
-    margin-top: var(--pad);
-}
-
-.wrapper > :is(h1, h2, h3) + * {
-    margin-top: var(--pad);
-}
-
 .grid {
     display: grid;
-    /* grid-template-columns: repeat(12, 1fr); */
+    /* grid-template-columns: repeat(auto-fill,minmax(min(12rem, 100%), 1fr)); */
 	gap: var(--pad);
     background-color: lightblue;
 	padding: var(--pad);
 	margin: 0 auto;
-	max-width: 128rem;
+	max-width: 144rem;
 }
 
-.grid .item {
+.grid .col {
     background: deeppink;
 	min-height: 10rem;
-	border-radius: 1rem;
-    display: flex;
+	/* border-radius: 0.8rem; */
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
-.grid:nth-child(odd) .item {
+.grid:nth-child(odd) .col {
     background: deepskyblue;
 }
 
+.col > * + * {
+	margin-top: var(--pad);
+}
+
+.col > p + p {
+    margin-top: var(--pad);
+}
+
+.col > :is(h1, h2, h3) + * {
+    margin-top: var(--pad-sm);
+}
+
+.col > :is(h4, h5, h6) + * {
+    margin-top: var(--pad-xs);
+}
+
+/* */
+
+.logo {
+    width: 16rem;
+}
+
+/* 
 @media screen and (min-width: 1321px) {
-    /* .grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(5rem, 100%), 1fr));
-    } */
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(min(12rem, 100%), 1fr));
+    }
 
     .grid.content-right {
         grid-template-columns: 4fr 8fr;
@@ -143,4 +167,4 @@ p {
     .grid {
         grid-template-columns: repeat(6, 1fr);
     }
-}
+} */
