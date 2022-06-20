@@ -10,4 +10,20 @@
     --pad-md: var(--pad);
     --pad-sm: calc(var(--pad) / 2);
     --pad-xs: calc(var(--pad) / 4);
+
+    --color-primary-base: rgba(60,179,113,1); /* #3cb371 */
+    --color-primary-light: rgba(90,200,139,1);
+    --color-primary-dark: rgba(47,141,89,1);
+
+    --color-secondary-base: rgba(205,203,190,1);
+    --color-secondary-light: rgba(227,226,219,1); /* #e3e2db */
+    --color-secondary-dark: rgba(52,51,41,1);
+
+    --black: rgba(0,0,0,1);
+    --white: rgba(255,255,255,1);
+
+    --color-bg-light: var(--white);
+    --color-bg-dark: rgba(51,51,51,1);
+    --color-bg-primary: var(--color-primary-base);
+    --color-bg-secondary: var(--color-secondary-light);
 }

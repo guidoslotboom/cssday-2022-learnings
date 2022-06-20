@@ -1,3 +1,15 @@
+/*** ***/
+
+p.text-lg {
+    font-size: clamp(1.7rem, 0.75vw + var(--fluid-unit), 2.0rem);
+}
+
+p.text-sm {
+    font-size: clamp(1.4rem, 0.4vw + var(--fluid-unit), 1.6rem);
+}
+
+/*** ***/
+
 @media screen and (min-width: 481px) {
 
     .col-span-1 {
