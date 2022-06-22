@@ -4,6 +4,28 @@
  ***
 *****/
 
+.bg-light {
+    background-color: var(--bg-color-light);
+}
+
+.bg-dark {
+    background-color: var(--bg-color-dark);
+}
+
+.bg-primary {
+    background-color: var(--bg-color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--bg-color-secondary);
+}
+
+/*****
+ ***
+ ***    Typography
+ ***
+*****/
+
 p.text-lg {
     font-size: clamp(1.7rem, 0.75vw + var(--fluid-unit), 2.0rem);
 }
@@ -28,4 +50,14 @@ p.text-sm {
     grid-template-columns: repeat(auto-fill,
 		minmax(min(12rem, 100%), 1fr)
 	);
+}
+
+.grid--wide {
+    max-width: 100%;
+}
+
+.flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

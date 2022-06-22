@@ -12,13 +12,77 @@
 </head>
 
 <body>
-    <div class="wrapper grid">
-        <nav>
-            <a href="css-layout.html">CSS Layout</a>
-            <a href="fluid-typography.html">Fluid Typography</a>
-            <a href="fluid-spacing.html">Fluid Spacing</a>
-        </nav>
-    </div>
+    <header class="wrapper">
+        <div class="grid">
+            <a class="logo" href="index.html">
+                <img src="assets/images/cssday-logo.svg" alt="CSSday">
+            </a>
+            <nav>
+                <a href="fluid-typography.html">Fluid Typography</a>
+                <a href="fluid-spacing.html">Fluid Spacing</a>
+            </nav>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div class="grid grid--speakers">
+
+            <article class="speaker">
+                <a class="speaker__photo" href="#">
+                    <img src="assets/images/speaker-adam-argyle.webp" alt="Adam Argyle">
+                </a>
+                <div class="speaker__details">
+                    <h4><a href="#">Oh Snap!</a></h4>
+                    <h6><a href="#">Adam Argyle</a></h6>
+                </div>
+            </article>
+
+            <article class="speaker">
+                <a class="speaker__photo" href="#">
+                    <img src="assets/images/speaker-michelle-barker.webp" alt="Michelle Barker">
+                </a>
+                <div class="speaker__details">
+                    <h4><a href="#">Creative CSS Layout</a></h4>
+                    <h6><a href="#">Michelle Barker</a></h6>
+                </div>
+            </article>
+
+            <article class="speaker">
+                <a class="speaker__photo" href="#">
+                    <img src="assets/images/speaker-michelle-barker.webp" alt="Michelle Barker">
+                </a>
+                <div class="speaker__details">
+                    <h4><a href="#">Creative CSS Layout</a></h4>
+                    <h6><a href="#">Michelle Barker</a></h6>
+                </div>
+            </article>
+            
+        </div>
+        <div class="grid grid--talks">
+
+            <div class="talk">
+                <h2><a href="#">Oh Snap!</a></h2>
+                <ul>
+                    <li><a href="#">Subject one</a></li>
+                    <li><a href="#">Subject two</a></li>
+                    <li><a href="#">Subject three</a></li>
+                </ul>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="#">
+                        <img src="assets/images/speaker-adam-argyle.webp" alt="Adam Argyle">
+                    </a>
+                    <a href="#">Adam Argyle</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="wrapper">
+        <div class="grid">
+            <div class="col">
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

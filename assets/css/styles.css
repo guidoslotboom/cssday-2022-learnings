@@ -17,13 +17,13 @@
 
     --color-secondary-base: rgba(205,203,190,1);
     --color-secondary-light: rgba(227,226,219,1); /* #e3e2db */
-    --color-secondary-dark: rgba(52,51,41,1);
+    --color-secondary-dark: rgba(194,191,176,1);
 
     --black: rgba(0,0,0,1);
     --white: rgba(255,255,255,1);
 
-    --color-bg-light: var(--white);
-    --color-bg-dark: rgba(51,51,51,1);
-    --color-bg-primary: var(--color-primary-base);
-    --color-bg-secondary: var(--color-secondary-light);
+    --bg-color-light: var(--white);
+    --bg-color-dark: rgba(51,51,51,1);
+    --bg-color-primary: var(--color-primary-base);
+    --bg-color-secondary: var(--color-secondary-light);
 }
