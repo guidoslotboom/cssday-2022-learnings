@@ -177,3 +177,27 @@ code {
     font-family: monospace;
     font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
 }
+
+/*****
+ ***
+ ***    Elements: Blockquote & Cite
+ ***
+*****/
+
+blockquote {
+    padding: var(--space-layout-sm);
+    /* border-left: 2px dashed var(--color-secondary-light); */
+    background-color: var(--color-secondary-lighter);
+    color: var(--color-secondary-darker);
+    font-style: italic;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: var(--space-content-xs);
+}
+
+blockquote cite:before {
+    content: "—";
+    margin-inline: var(--space-content-xs);
+}

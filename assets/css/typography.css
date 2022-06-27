@@ -46,8 +46,18 @@ p, li {
     line-height: 1.5;
 }
 
+blockquote,
 strong {
     font-weight: 600;
+}
+
+blockquote {
+    font-size: clamp(2.2rem, 1.5vw + var(--relative-size), 2.8rem);
+}
+
+cite {
+    font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
+    font-weight: 400;
 }
 
 /** **/
