@@ -38,6 +38,30 @@
     font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
 }
 
+.text-200 {
+    font-weight: 200;
+}
+
+.text-300 {
+    font-weight: 300;
+}
+
+.text-400 {
+    font-weight: 400;
+}
+
+.text-600 {
+    font-weight: 600;
+}
+
+.text-700 {
+    font-weight: 700;
+}
+
+.text-900 {
+    font-weight: 900;
+}
+
 /*****
  ***
  ***    Flexbox

@@ -218,3 +218,21 @@ ul li .highlight,
 ol li .highlight {
     margin-top: var(--space-content-xs);
 }
+
+/*****
+ ***
+ ***    Component: Gallery
+ ***
+*****/
+
+.talk__gallery {
+    display: grid;
+    width: 100%;
+    gap: var(--space-layout-sm);
+    grid-template-columns: 1fr 1fr;
+}
+
+.talk__gallery img {
+    width: 100%;
+    aspect-ratio: 1;
+}
