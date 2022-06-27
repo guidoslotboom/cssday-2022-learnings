@@ -121,3 +121,59 @@ header nav {
     /* display: block; */
     scroll-behavior: smooth;
 }
+
+/*****
+ ***
+ ***    Elements: List
+ ***
+*****/
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: circle;
+}
+
+ol li,
+ul li {
+    margin-top: var(--space-content-sm);
+    margin-left: var(--space-content-md);
+}
+
+ol li { 
+    padding-left: var(--space-content-xs);
+}
+
+ol li::marker,
+ul li::marker {
+    color: var(--color-secondary-darker);
+}
+
+ol li:not(:first-child),
+ul li:not(:first-child) {
+    margin-top: var(--space-content-sm);
+}
+
+/*****
+ ***
+ ***    Elements: Pre & Code
+ ***
+*****/
+
+pre, code {
+    display: inline-block;
+    background-color: var(--color-secondary-light);
+}
+
+pre {
+    padding: var(--space-content-sm);
+    width: 100%;
+}
+
+code {
+    padding-inline: 0.2rem;
+    font-family: monospace;
+    font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
+}

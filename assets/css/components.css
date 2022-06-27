@@ -198,3 +198,23 @@
     background-color: var(--color-primary-lighter);
     color: var(--color-primary-darker);
 }
+
+/*****
+ ***
+ ***    Component: Hightlight
+ ***
+*****/
+
+.highlight {
+    display: block;
+    padding: var(--space-content-sm) var(--space-content-sm);
+}
+
+.highlight--reference {
+    background-color: var(--color-primary-lighter);
+}
+
+ul li .highlight,
+ol li .highlight {
+    margin-top: var(--space-content-xs);
+}
