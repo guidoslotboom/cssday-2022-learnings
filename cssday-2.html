@@ -91,9 +91,81 @@
 
                 <!-- Talk: Summary -->
 
+                <p>Door de komst van Flexbox en Grid en de doorontwikkeling van beide lay-out modellen met nieuwe mogelijkheden welke inzetbaar zijn voor beide ontstaan er nieuwe creatieve mogelijkheden voor een veel meer flexibeler web.</p>
+
+                <h3>Flexbox or grid?</h3>
+
+                <p>Het antwoord is zoals gewoonlijk: een of beide, want het is afhankelijk van het doel en ieder lay-out model heeft zijn eigen kracht. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">Flexbox is er voor one-dimensional lay-outs</a> en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout" target="_blank">Grid is meer geschikt voor two-dimensional layouts</a>.</p>
+
+                <h3>Opsomming van de nieuwste mogelijkheden</h3>
+
+                <ul>
+                    <li><code>gap:</code> voor Flexbox is geintroduceerd waardoor de property nu zowel werkt voor Flexbox als Grid.</li>
+                    <li><code>min()</code>, <code>max()</code> en <code>clamp()</code> voor het toepassen van fluid gaps en typography: 
+                        <ul>
+                            <li><code>min(MIN, MAX)</code></li>
+                            <li><code>max(MAX, MIN)</code></li>
+                            <li>
+                                <code>clamp(MIN, VAL, MAX)</code>
+                                <div class="highlight highlight--reference">
+                                    Voorbeeld: <a href="https://codepen.io/michellebarker/details/QWQqMgY" target="_blank">clamp() @ Codepen</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><code>aspect-ratio:</code> en <code>object-fit:</code> zijn een krachtige combinatie om de volledige controle over de verhouding van een afbeelding met stijling te bepalen. <code>aspect-ratio:</code> kan daarnaast ook gebruikt worden in een grid.
+                        <div class="highlight highlight--reference">
+                            Voorbeeld: <a href="https://codepen.io/michellebarker/pen/YzeqRrP" target="_blank">aspect-ratio grids @ Codepen</a>
+                        </div>
+                    </li>
+                    <li><code>auto-fit</code> en <code>auto-fill</code> voor <code>grid-template-columns:</code> om kolommen te herhalen en breedte ervan automatisch aan te laten passen aan de beschikbare ruimte tot een minimale breedte van een kolom.
+                        <div class="highlight highlight--reference">
+                            Voorbeeld: <a href="https://codepen.io/michellebarker/pen/BaYmNgN" target="_blank">auto-fit/auto-fill @ Codepen</a>
+                        </div>
+                    </li>
+                    <li>Quantity queries met <code>@container</code> om de flexibliteit van de layout nog meer tot in detail te bepalen.
+                        <div class="highlight highlight--reference">
+                            Voorbeeld: <a href="https://codepen.io/michellebarker/pen/OJQpVKE" target="_blank">Grid with container queries @ Codepen</a><br> <strong class="text-sm">Let op check <a href="https://caniuse.com/css-container-queries" target="_blank">Can I Use Container Queries</a> voor de browser ondersteuning</strong>
+                        </div>
+                    </li>
+                    <li>Relative units voor <code>@container</code>, welke specifieker zijn voor de flexibele groottes van een of meer elementen in een <code>@container</code>: 
+                        <ul>
+                            <li><code>cqw</code> query container breedte</li>
+                            <li><code>cqh</code> query container hoogte</li>
+                            <li><code>cqi</code> query container inline grootte</li>
+                            <li><code>qpb</code> query container block grootte</li>
+                            <li><code>cqmin</code> kleinste query container inline grootte of block grootte</li>
+                            <li><code>cqmax</code> grootste query container inline grootte of block grootte</li>
+                        </ul>
+                        <div class="highlight highlight--reference">
+                            <strong class="text-sm">Let op check <a href="https://caniuse.com/css-container-query-units" target="_blank">Can I Use Container Query Units</a> voor de browser ondersteuning</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <code>:has()</code> de parent selector pseudo-class.
+                        <div class="highlight highlight--reference">
+                            Voorbeeld: <a href="https://codepen.io/michellebarker/pen/qBxELqY" target="_blank">:has() and quantity queries @ Codepen</a><br> <strong class="text-sm">Let op check <a href="https://caniuse.com/css-has" target="_blank">Can I Use :has()</a> voor de browser ondersteuning</strong>
+                        </div>
+                    </li>
+                </ul>
+
                 <!-- Talk: Bookmarks -->
 
+                <h3>Bookmarks</h4>
+
+                    <ul>
+                        <li><a href="https://css-tricks.com/container-units-should-be-pretty-handy/" target="_blank">Container Units Should Be Pretty Handy</a></li>
+                        <li><a href="https://web.dev/min-max-clamp/" target="_blank">min(), max(), and clamp(): three logical CSS functions to use today</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=U9VF-4euyRo" target="_blank">min(), max(), and clamp() are CSS magic! by Kevin Powell @ YouTube</a></li>
+                        <li><a href="https://utopia.fyi/" target="_blank">Elegantly scale type and space without breakpoints</a></li>
+                        <li><a href="https://modern-fluid-typography.vercel.app/" target="_blank">Modern fluid typography editor</a></li>
+                    </ul>
+
                 <!-- Talk: Slides & Video -->
+
+                <p class="highlight highlight--reference">
+                    Bekijk de slides: <a href="https://noti.st/mbarker84/yGiO0I/creative-css-layout-the-flexible-web" target="_blank">Creative CSS Layout The Flexible Web @ Notist</a>
+                </p>
                 
             </article>
 
