@@ -91,9 +91,59 @@
 
                 <!-- Talk: Summary -->
 
+                <p>Interop 2022 is een samenwerking tussen de grote browser ontwikkelaars <a href="https://webkit.org/blog/12288/working-together-on-interop-2022/" target="_blank">Apple</a>, <a href="https://web.dev/interop-2022/" target="_blank">Google</a>, <a href="https://aka.ms/microsoft-interop2022" target="_blank">Microsoft</a> en <a href="https://hacks.mozilla.org/2022/03/interop-2022/" target="_blank">Mozilla</a> met daarnaast twee softwareadviesbureaus <a href="https://bocoup.com/blog/interop-2022" target="_blank">Bocoup</a> en <a href="https://igalia.com/news/interop2022.html" target="_blank">Igalia</a>. Het doel van deze samenwerking is om voor consistenter web te zorgen door te gezamenlijk focussen op dezelfde (door)ontwikkelingen van webtechnieken.</p>
+
+                <h3>Interop 2022 / Compat 2021: 5 Focus Areas afgerond</h3>
+
+                <ol>
+                    <li><code>aspect-ratio:</code> om de beeldverhouding van het element te bepalen, <a href="https://css-tricks.com/aspect-ratio-boxes/">nooit meer padding hack!</a></li>
+                    <li><code>gap:</code> voor Flexbox is geintroduceerd.</li>
+                    <li><code>self-start;</code> en <code>self-end;</code> als properties voor rtl ltr  uitlijning richting voor Flexbox en Grid.</li>
+                    <li><code>position: sticky;</code> om een element te laten plakken, eindelijk geen JavaScripts meer nodig.</li>
+                    <li><code>transform:</code> voor betere ondersteuning van <code>rotate()</code>, <code>scale()</code>, <code>skew()</code> en <code>translate()</code>.</li>
+                </ol>
+
+                <h3>Interop 2022: 10 Focus Areas in (door)ontwikkeling</h3>
+
+                <ol>
+                    <li>Cascade Layers met <code>@layer</code> is een toevoeging aan de CSS Specificity om er meer invloed op te hebben.
+                        <div class="highlight highlight--reference">
+                            <a href="cssday-1.html#bramus">The CSS Cascade, A Deep Dive door Bramus van Damme</a>
+                        </div>
+                    </li>
+                    <li>Color Spaces and Functions <code>color-mix();</code> en <code>color-contrast();</code>.</li>
+                    <li>Containment <code>contain:</code> voor het isoleren van de styling tot een bepaald element op de pagina wat ten goede komt aan de prestatie van de pagina.</li>
+                    <li><code>&lt;dialog&gt;</code> voor een native dialog/modal inclusief achtergrond styling en een JS API om het te openen of te sluiten.</li>
+                    <li><code>accent-color:</code> voor formulier elementen om in een keer de accent kleur toe te passen.</li>
+                    <li><code>overscroll-behavior:</code> en <code>scroll-snap</code> voor scroll.
+                        <div class="highlight highlight--reference">
+                            <a href="cssday-2.html#adam">Oh Snap! That Scroll Control</a>
+                        </div>
+                    </li>
+                    <li><code>subgrid;</code> eindelijk de optie om de grid styling te overerven van parent naar child grid.
+                        <div class="highlight highlight--reference">
+                            <a href="cssday-2.html#michelle">Creative CSS Layout door Michelle Barker</a>
+                        </div>
+                    </li>
+                    <li>Viewport Units: <code>dvh</code> dynamic viewport height, <code>lvh</code> largest viewport height en <code>svh</code> smalled viewport height. Voor betere ondersteuning van de wisselende viewport op mobiele devices.</li>
+                </ol>
+
+                <h3>Voortgang van de Focus Areas</h3>
+
+                <p>De voortgang van de Focus Areas is op het <a href="https://wpt.fyi/interop-2022" target="_blank">Interop 2022 Dashboard</a> te zien, de scores per browser op het dashboard worden door <a href="https://web-platform-tests.org/" target="_blank">Web Platform Tests</a> berekend.</p>
+
+                <h3>Bijdrage leveren aan het testen en Interop 2023</h3>
+                
+                <p>Er is er nog genoeg om te testen en verbeteren. Iedereen kan een bijdrage leveren aan het testen door bugs te melden in het <a href="https://github.com/web-platform-tests/interop-2022/issues/">Interop 2022 project op Github</a>, zo heb je indirect invloed op verbeteringen. Of als je ideeën hebt waar <a href="https://github.com/web-platform-tests/interop-2022/issues/78">Interop 2023</a> zich op moet focussen dan kan je dit aangeven.</p>
+
                 <!-- Talk: Bookmarks -->
 
                 <!-- Talk: Slides & Video -->
+
+                <p class="highlight highlight--reference">
+                    Bekijk de slides: <a href="https://noti.st/rachelandrew/MSFKri/interop-2022" target="_blank">Interop 2022 @ Notist</a><br>
+                    Bekijk de video: <a href="https://www.youtube.com/watch?v=w_gOOW2ARMk" target="_blank">Interop 2022 Talk @ YouTube</a>
+                </p>
 
             </article>
 
@@ -147,7 +197,7 @@
                 <!-- Talk: Slides & Video -->
 
                 <p class="highlight highlight--reference">
-                    Bekijk de slides: <a href="https://projects.verou.me/talks/dynamic-css-secrets/" target="_blank">CSS Variable Secrets</a>
+                    Bekijk de slides: <a href="https://projects.verou.me/talks/dynamic-css-secrets/" target="_blank">CSS Variable Secrets @ verou.me</a>
                 </p>
 
             </article>
