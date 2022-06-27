@@ -115,9 +115,9 @@
                     <li>Containment <code>contain:</code> voor het isoleren van de styling tot een bepaald element op de pagina wat ten goede komt aan de prestatie van de pagina.</li>
                     <li><code>&lt;dialog&gt;</code> voor een native dialog/modal inclusief achtergrond styling en een JS API om het te openen of te sluiten.</li>
                     <li><code>accent-color:</code> voor formulier elementen om in een keer de accent kleur toe te passen.</li>
-                    <li><code>overscroll-behavior:</code> en <code>scroll-snap</code> voor scroll.
+                    <li><code>overscroll-behavior:</code> en <code>scroll-snap</code> voor scrolling. Het einde is nabij voor sliders met (veel) JavaScript.
                         <div class="highlight highlight--reference">
-                            <a href="cssday-2.html#adam">Oh Snap! That Scroll Control</a>
+                            <a href="cssday-2.html#adam">Oh Snap! That Scroll Control door Adam Argyle</a>
                         </div>
                     </li>
                     <li><code>subgrid;</code> eindelijk de optie om de grid styling te overerven van parent naar child grid.
@@ -185,14 +185,14 @@
 
                 <h3>Bookmarks</h4>
 
-                    <ul>
-                        <li><a href="https://lea.verou.me/2021/10/custom-properties-with-defaults/" target="_blank">Custom properties with defaults: 3+1 strategies</a></li>
-                        <li><a href="https://lea.verou.me/2021/06/inherit-ancestor-font-size-for-fun-and-profit/" target="_blank">Inherit ancestor font-size, for fun and profit</a></li>
-                        <li><a href="https://lea.verou.me/2021/05/82-of-developers-get-this-3-line-css-quiz-wrong/" target="_blank">82% of developers get this 3 line CSS quiz wrong</a></li>
-                        <li><a href="https://lea.verou.me/2020/10/the-var-space-hack-to-toggle-multiple-values-with-one-custom-property/" target="_blank">The -​-var: ; hack to toggle multiple values with one custom property</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/var" target="_blank">MDN Web Docs: var()</a></li>
-                        <li><a href="https://caniuse.com/mdn-html_elements_var" target="_blank">Can I Use: var()</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="https://lea.verou.me/2021/10/custom-properties-with-defaults/" target="_blank">Custom properties with defaults: 3+1 strategies</a></li>
+                    <li><a href="https://lea.verou.me/2021/06/inherit-ancestor-font-size-for-fun-and-profit/" target="_blank">Inherit ancestor font-size, for fun and profit</a></li>
+                    <li><a href="https://lea.verou.me/2021/05/82-of-developers-get-this-3-line-css-quiz-wrong/" target="_blank">82% of developers get this 3 line CSS quiz wrong</a></li>
+                    <li><a href="https://lea.verou.me/2020/10/the-var-space-hack-to-toggle-multiple-values-with-one-custom-property/" target="_blank">The -​-var: ; hack to toggle multiple values with one custom property</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/var" target="_blank">MDN Web Docs: var()</a></li>
+                    <li><a href="https://caniuse.com/mdn-html_elements_var" target="_blank">Can I Use: var()</a></li>
+                </ul>
 
                 <!-- Talk: Slides & Video -->
 
@@ -234,9 +234,57 @@
 
                 <!-- Talk: Summary -->
 
+                <p>Met Bramus namen we een diepe duik in CSS Specificity en wat de toevoeging van het nieuwe Cascade Layers betekend en hoe het toegepast kan worden.</p>
+
+                <h3>Wat is CSS Specicifity</h3>
+
+                <p>De CSS Specificity is het algoritme dat door browsers wordt gebruikt om de CSS-declaratie te bepalen die het meest relevant is voor een element, wat op zijn beurt de eigenschapswaarde bepaalt die op het element moet worden toegepast. Het algoritme berekent het gewicht van een CSS-selector om te bepalen welke regel van concurrerende CSS-declaraties op een element wordt toegepast.</p>
+
+                <h3>Introductie van Cascade layers</h3>
+
+                <p>Door het gebruiken van specifieke pseudo-elements als <code>:is()</code>, <code>:has()</code>, <code>:where()</code> en <code>:not()</code> of het gebruiker van standaard stijling kan het een behoorlijke uitdaging zijn om stijling te overschrijven. Met Cascade Layers als toevoeging aan de CSS Specificity wordt het mogelijk om styling aan de hand van <code>@layer</code> te ordenen en een hogere of lagere prioriteit te geven. Dit maakt het makelijker om overschrijven van eerder vastgelegde stijling.</p>
+
+                <pre>
+                    <code>@layer reset, base, components, utilities;</code>
+                </pre>
+
+                <pre>
+                    <code>
+                        @layer reset {<br>  
+                            ...<br>
+                        }<br><br>
+
+                        @layer base {<br>
+                            ...<br>
+                        }<br><br>
+
+                        @layer components {<br>
+                            ...<br>
+                        }<br><br>
+
+                        @layer utilities {<br>
+                            ...<br>
+                        }<br>
+                    </code>
+                </pre>
+
                 <!-- Talk: Bookmarks -->
 
+                <h3>Bookmarks</h4>
+
+                <ul>
+                    <li><a href="https://polypane.app/css-specificity-calculator/" target="_blank">CSS Specifity calculator</a></li>
+                    <li><a href="https://www.npmjs.com/package/@bramus/specificity" target="_blank">CSS Specifity NPM package van Bramus</a></li>
+                    <li><a href="https://www.bram.us/2021/09/15/the-future-of-css-cascade-layers-css-at-layer/" target="_blank">The Future of CSS: Cascade Layers (CSS @layer)</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer" target="_blank">MDN Web Docs: @layer</a></li>
+                    <li><a href="https://caniuse.com/mdn-css_at-rules_layer" target="_blank">Can I Use: @layer</a></li>
+                </ul>
+
                 <!-- Talk: Slides & Video -->
+
+                <p class="highlight highlight--reference">
+                    Bekijk de slides: <a href="https://slidr.io/bramus/the-css-cascade-a-deep-dive-2022-06-09-css-day#1" target="_blank">The CSS Cascade A Deep Dive @ slidr.io</a>
+                </p>
                 
             </article>
 
