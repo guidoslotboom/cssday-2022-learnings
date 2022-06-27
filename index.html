@@ -4,11 +4,6 @@
 <title>CSS day 2022 learnings</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" href="assets/css/reset.css" layer="reset">
-<link rel="stylesheet" href="assets/css/base.css" layer="base">
-<link rel="stylesheet" href="assets/css/components.css" layer="components">
-<link rel="stylesheet" href="assets/css/themes.css" layer="themes">
-<link rel="stylesheet" href="assets/css/utilities.css" layer="utilities">
 </head>
 
 <body>
@@ -17,62 +12,530 @@
             <a class="logo" href="index.html">
                 <img src="assets/images/cssday-logo.svg" alt="CSSday">
             </a>
-            <nav>
-                <a href="fluid-typography.html">Fluid Typography</a>
-                <a href="fluid-spacing.html">Fluid Spacing</a>
+            <nav class="nav--scroll text-lg">
+                <a href="cssday-1.html">Dag 1</a>
+                <a href="cssday-2.html">Dag 2</a>
             </nav>
         </div>
     </header>
     <main class="wrapper">
-        <div class="grid grid--speakers">
-
-            <article class="speaker">
-                <a class="speaker__photo" href="#">
-                    <img src="assets/images/speaker-adam-argyle.webp" alt="Adam Argyle">
-                </a>
-                <div class="speaker__details">
-                    <h4><a href="#">Oh Snap!</a></h4>
-                    <h6><a href="#">Adam Argyle</a></h6>
-                </div>
-            </article>
-
-            <article class="speaker">
-                <a class="speaker__photo" href="#">
-                    <img src="assets/images/speaker-michelle-barker.webp" alt="Michelle Barker">
-                </a>
-                <div class="speaker__details">
-                    <h4><a href="#">Creative CSS Layout</a></h4>
-                    <h6><a href="#">Michelle Barker</a></h6>
-                </div>
-            </article>
-
-            <article class="speaker">
-                <a class="speaker__photo" href="#">
-                    <img src="assets/images/speaker-michelle-barker.webp" alt="Michelle Barker">
-                </a>
-                <div class="speaker__details">
-                    <h4><a href="#">Creative CSS Layout</a></h4>
-                    <h6><a href="#">Michelle Barker</a></h6>
-                </div>
-            </article>
-            
-        </div>
         <div class="grid grid--talks">
 
-            <div class="talk">
-                <h2><a href="#">Oh Snap!</a></h2>
-                <ul>
-                    <li><a href="#">Subject one</a></li>
-                    <li><a href="#">Subject two</a></li>
-                    <li><a href="#">Subject three</a></li>
-                </ul>
+            <!-- Talk: In And Out Of Style -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 1</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-1.html#jeremy">
+                                <span>In And Out Of Style</span>
+                                <span>Why standards matter</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a href="cssday-1.html#jeremy">linear-gradient();</a>
+                        <a href="cssday-1.html#jeremy">accent-color:</a>
+                        <a href="cssday-1.html#jeremy">@layer</a>
+                        <a href="cssday-1.html#jeremy">:scope</a>
+                    </div>
+                </div>
                 <div class="talk__speaker">
-                    <a class="speaker__image" href="#">
+                    <a class="speaker__image" href="https://twitter.com/adactio" target="_blank">
+                        <img src="assets/images/speaker-jeremy-keith.jpg" alt="Jeremy Keith">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/adactio" target="_blank">
+                                <strong class="text-md">Jeremy Keith</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Founder / Developer</span> @ 
+                            <a href="https://clearleft.com/" target="_blank">Clearleft</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: Interop 2022 -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 1</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-1.html#rachel">
+                                <span>Interop 2022</span>
+                                <span>The Flexible Web</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a href="cssday-1.html#rachel">aspect-ratio:</a>
+                        <a href="cssday-1.html#rachel">flex gap:</a>
+                        <a href="cssday-1.html#rachel">color-mix()</a>
+                        <a href="cssday-1.html#rachel">color-contrast()</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/rachelandrew" target="_blank">
+                        <img src="assets/images/speaker-rachel-andrew.jpg" alt="Rachel Andrew">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/rachelandrew" target="_blank">
+                                <strong class="text-md">Rachel Andrew</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Technical Writer</span> @ 
+                            <a href="https://web.dev/authors/rachelandrew/" target="_blank">Google LLC / web.dev</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: CSS Variable Secrets -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 1</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-1.html#lea">
+                                <span>CSS Variable Secrets</span>
+                                <span>Inheriting and Beyond</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a href="cssday-1.html#lea">var()</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/leaverou" target="_blank">
+                        <img src="assets/images/speaker-lea-verou.webp" alt="Lea Verou">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/leaverou" target="_blank">
+                                <strong class="text-md">Lea Verou</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Elected Participant</span> @ 
+                            <a href="https://www.w3.org/" target="_blank">W3C</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: The CSS Cascade -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 1</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-1.html#bramus">
+                                <span>The CSS Cascade</span>
+                                <span>A Deep Dive</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a href="cssday-1.html#bramus">var()</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/bramus" target="_blank">
+                        <img src="assets/images/speaker-bramus-van-damme.jpg" alt="Bramus van Damme">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/bramus" target="_blank">
+                                <strong class="text-md">Bramus van Damme</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Chrome DevRel Engineer</span> @ 
+                            <a href="https://about.google/" target="_blank">Google LLC</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: Collaborating without Borders -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 1</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-1.html#ana">
+                                <span>Collaborating without Borders</span>
+                                <span>Text</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a>text</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/theanaferreira" target="_blank">
+                        <img src="assets/images/speaker-ana-ferreira.jpeg" alt="Ana Ferreira">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/theanaferreira" target="_blank">
+                                <strong class="text-md">Ana Ferreira</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Head of Design</span> @ 
+                            <a href="https://doist.com/" target="_blank">Todoist</a> &
+                            <a href="https://twist.com/" target="_blank">Twist</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: Escaping the sRGB Prison -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 1</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-1.html#chris">
+                                <span>Escaping the sRGB Prison</span>
+                                <span>Text</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a href="cssday-1.html#chris">text</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/svgeesus" target="_blank">
+                        <img src="assets/images/speaker-chris-lilley.jpeg" alt="Chris Lilley">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/svgeesus" target="_blank">
+                                <strong class="text-md">Chris Lilley</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Technical Director</span> @ 
+                            <a href="https://www.w3.org/" target="_blank">W3C</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: I pressed ⌘B -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 1</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-1.html#marcin">
+                                <span>I pressed ⌘B</span>
+                                <span>You wouldn't believe what happened next</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a>text</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/mwichary" target="_blank">
+                        <img src="assets/images/speaker-marcin-wichary.jpeg" alt="Marcin Wichary">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/mwichary" target="_blank">
+                                <strong class="text-md">Marcin Wichary</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Design Manager</span> @ 
+                            <a href="https://figma.com/" target="_blank">Figma</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: Oh snap! -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 2</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-2.html#adam">
+                                <span>Oh snap!</span>
+                                <span>That scroll control</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a href="cssday-2.html#adam">overflow:</a>
+                        <a href="cssday-2.html#adam">scroll-snap-type:</a>
+                        <a href="cssday-2.html#adam">scroll-snap-align:</a>
+                        <a href="cssday-2.html#adam">scroll-padding:</a>
+                        <a href="cssday-2.html#adam">scroll-margin:</a>
+                        <a href="cssday-2.html#adam">:snapped</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/argyleink" target="_blank">
                         <img src="assets/images/speaker-adam-argyle.webp" alt="Adam Argyle">
                     </a>
-                    <a href="#">Adam Argyle</a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/argyleink" target="_blank">
+                                <strong class="text-md">Adam Argyle</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>CSS Developer Advocate</span> @ 
+                            <a href="https://web.dev/authors/adamargyle/" target="_blank">Google LLC / web.dev</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </article>
+
+            <!-- Talk: Creative CSS Layout -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 2</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-2.html#michelle">
+                                <span>Creative CSS Layout</span>
+                                <span>The Flexible Web</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a href="cssday-2.html#michelle">flexbox;</a>
+                        <a href="cssday-2.html#michelle">grid;</a>
+                        <a href="cssday-2.html#michelle">gap:</a>
+                        <a href="cssday-2.html#michelle">clamp();</a>
+                        <a href="cssday-2.html#michelle">aspect-ratio:</a>
+                        <a href="cssday-2.html#michelle">object-fit:</a>
+                        <a href="cssday-2.html#michelle">auto-fit</a>
+                        <a href="cssday-2.html#michelle">auto-fill</a>
+                        <a href="cssday-2.html#michelle">container:</a>
+                        <a href="cssday-2.html#michelle">@container</a>
+                        <a href="cssday-2.html#michelle">subgrid;</a>
+                        <a href="cssday-2.html#michelle">:has</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/michebarks" target="_blank">
+                        <img src="assets/images/speaker-michelle-barker.webp" alt="Michelle Barker">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/michebarks" target="_blank">
+                                <strong class="text-md">Michelle Barker</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Front-End Developer</span> @ 
+                            <a href="https://www.ada-mode.com/" target="_blank">AdaMode</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: Getting Creative with Keyframes -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 2</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-2.html#amit">
+                                <span>Getting Creative with Keyframes</span>
+                                <span>Caption</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a>Text</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/amit_sheen" target="_blank">
+                        <img src="assets/images/speaker-amit-sheen.jpeg" alt="Amit Sheen">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/amit_sheen" target="_blank">
+                                <strong class="text-md">Amit Sheen</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Front-End Developer</span> @ 
+                            <a href="https://www.wix.com/" target="_blank">Wix</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: The Joy of CSS -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 2</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-2.html#ben">
+                                <span>The Joy of CSS</span>
+                                <span>Caption</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a>Text</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="index.html" target="_blank">
+                        <img src="assets/images/speaker-ben-evans.webp" alt="Ben Evans">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="index.html" target="_blank">
+                                <strong class="text-md">Ben Evans</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>CSS Artist</span> @ 
+                            <a href="index.html" target="_blank">?</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: Service Design and Front End Interaction -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 2</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-2.html#maike">
+                                <span>Service Design and Front End Interaction</span>
+                                <span>Caption</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a>Text</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/manuelame" target="_blank">
+                        <img src="assets/images/speaker-maike-klip.jpeg" alt="Maike Klip">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/manuelame" target="_blank">
+                                <strong class="text-md">Maike Klip</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <a href="https://klipklaar.nl/" target="_blank">Freelance Design Reseacher</a> @
+                            <span>de overheid</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: The Future of Organizing Your CSS -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 2</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-2.html#tab">
+                                <span>The Future of Organizing Your CSS</span>
+                                <span>Caption</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a href="cssday-2.html#tab">Shadow DOM</a>
+                        <a href="cssday-2.html#tab">::part()</a>
+                        <a href="cssday-2.html#tab">@scope</a>
+                        <a href="cssday-2.html#tab">@nest</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/tabatkins" target="_blank">
+                        <img src="assets/images/speaker-tab-atkins-bittner.jpg" alt="Tab Atkins-Bittner">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/tabatkins" target="_blank">
+                                <strong class="text-md">Tab Atkins-Bittner</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Spec Hacker</span> @ 
+                            <a href="https://about.google/" target="_blank">Google LLC</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Talk: When Design Systems Lie -->
+
+            <article class="talk tile">
+                <div class="talk__details">
+                    <div class="talk__heading">
+                        <span class="talk__day text-sm">Dag 2</span>
+                        <h3 class="talk__topic">
+                            <a href="cssday-2.html#stephan">
+                                <span>When Design Systems Lie</span>
+                                <span>Caption</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="talk__tags text-sm">
+                        <a>Text</a>
+                    </div>
+                </div>
+                <div class="talk__speaker">
+                    <a class="speaker__image" href="https://twitter.com/stephenhay" target="_blank">
+                        <img src="assets/images/speaker-stephen-hay.jpg" alt="Stephan Hay">
+                    </a>
+                    <div class="speaker__details">
+                        <div>
+                            <a href="https://twitter.com/stephenhay" target="_blank">
+                                <strong class="text-md">Stephan Hay</strong>
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            <span>Creative Director</span> @ 
+                            <a href="https://www.rabobank.nl/" target="_blank">Rabobank</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
         </div>
     </main>

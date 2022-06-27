@@ -1,29 +1,50 @@
-@layer reset, base, components, themes, utilities;
+@layer reset, typography, base, components, utilities;
+
+@import url(reset.css) layer(reset); 
+@import url(typography.css) layer(typography);
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap') layer(typography);
+@import url(base.css) layer(base);
+@import url(components.css) layer(components);
+@import url(utilities.css) layer(utilities);
 
 :root {
     font-size: 62.5%; /* Because 62.5% of 16px is 10px. Which makes 1rem = 10px. */
-    --fluid-unit: 1rem;
+    --relative-size: 1rem;
 
-    --pad: clamp(1.6rem, 2.5vw, 4.8rem);
-    --pad-xl: calc(var(--pad) * 4);
-    --pad-lg: calc(var(--pad) * 2);
-    --pad-md: var(--pad);
-    --pad-sm: calc(var(--pad) / 2);
-    --pad-xs: calc(var(--pad) / 4);
+    --space-layout: clamp(1.6rem, 2.5vw, 4.8rem);
+    --space-layout-xl: calc(var(--space-layout) * 4);
+    --space-layout-lg: calc(var(--space-layout) * 2);
+    --space-layout-md: var(--space-layout);
+    --space-layout-sm: calc(var(--space-layout) / 2);
+    --space-layout-xs: calc(var(--space-layout) / 4);
 
-    --color-primary-base: rgba(60,179,113,1); /* #3cb371 */
-    --color-primary-light: rgba(90,200,139,1);
-    --color-primary-dark: rgba(47,141,89,1);
+    --space-content: clamp(2.4rem, 2vw, 3.2rem);
+    --space-content-xl: calc(var(--space-content) * 4);
+    --space-content-lg: calc(var(--space-content) * 2);
+    --space-content-md: var(--space-content);
+    --space-content-sm: calc(var(--space-content) / 2);
+    --space-content-xs: calc(var(--space-content) / 4);
 
-    --color-secondary-base: rgba(205,203,190,1);
+    --color-primary-lighter: rgb(240,248,240);
+    --color-primary-light: rgb(96,202,143);
+    --color-primary-base: rgb(60,179,113); /* 3cb371 */
+    --color-primary-dark: rgb(40,120,76);
+    --color-primary-darker: rgb(30,91,57);
+
+    --color-secondary-lighter: rgb(244,244,241);
     --color-secondary-light: rgba(227,226,219,1); /* #e3e2db */
-    --color-secondary-dark: rgba(194,191,176,1);
+    --color-secondary-base: rgb(201,199,186);
+    --color-secondary-dark: rgb(150,146,120);
+    --color-secondary-darker: rgb(130,126,101);
 
     --black: rgba(0,0,0,1);
     --white: rgba(255,255,255,1);
 
+    --color-text-dark: rgb(41,40,32);
+    --color-text-light: rgb(214,241,226);
+
     --bg-color-light: var(--white);
-    --bg-color-dark: rgba(51,51,51,1);
+    --bg-color-dark: rgb(41,40,32);
     --bg-color-primary: var(--color-primary-base);
     --bg-color-secondary: var(--color-secondary-light);
 }

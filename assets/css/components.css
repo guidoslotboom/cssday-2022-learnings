@@ -1,0 +1,171 @@
+.grid--talks {
+    grid-template-columns: repeat(auto-fit, minmax(min(32rem, 100%), 1fr));
+}
+
+/*****
+ ***
+ ***    Component: Talk
+ ***
+*****/
+
+.talk__day {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--color-secondary-dark);
+}
+
+.talk__speaker {
+    display: inline-flex;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: var(--space-layout-sm);
+}
+
+.talk__details {
+    display: grid;
+    /* grid-template-rows: repeat(1fr); */
+}
+
+/*****
+ ***
+ ***    Component: Talk - Tile
+ ***
+*****/
+
+.talk.tile {
+    border: 0.2rem dashed var(--color-primary-base);
+    grid-auto-rows: 1fr min-content;
+    gap: var(--space-layout-xs);
+}
+
+.talk.tile,
+.talk.tile > div {
+    padding: var(--space-layout-xs);
+}
+
+.talk.tile {
+    display: grid;
+}
+
+.talk.tile .talk__details {
+    height: min-content;
+    gap: var(--space-layout-sm);
+}
+
+.talk.tile:hover .talk__day {
+    color: var(--color-primary-darker);
+}
+
+.talk.tile:hover .talk__topic a {
+    color: var(--black);
+}
+
+.talk.tile .talk__topic a {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: clamp(2.4rem, 1.75vw + var(--fluid-unit), 3.2rem);
+}
+
+.talk.tile .talk__topic a span:nth-child(2) {
+    font-size: 60%;
+}
+
+.talk.tile .speaker__image {
+    width: 5.6rem;
+    border-radius: 0.4rem;
+}
+
+.talk.tile:hover {
+    background-color: var(--bg-color-primary);
+    border: 0.2rem dashed var(--bg-color-light);
+}
+
+.talk.tile:hover .talk__speaker {
+    background-color: var(--white);
+}
+
+.talk.tile:hover .speaker__image:after {
+    background-color: rgba(60,179,113,0);
+    filter: contrast(100%) brightness(92%);
+}
+
+.talk.tile:hover .speaker__image img {
+    filter: grayscale(0);
+}
+
+/*****
+ ***
+ ***    Element: Speaker
+ ***
+*****/
+
+.speaker__image {
+    display: block;
+    /* width: 6.4rem; */
+    border-radius: 0.4rem;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1;
+}
+
+.speaker__image:after,
+.speaker__image img {
+    position: absolute;
+    bottom: 0;
+}
+
+.speaker__image:after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60,179,113,0.32);
+    filter: contrast(200%) brightness(64%);
+    display: block;
+}
+
+.speaker__image img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.speaker__details {
+    display: flex;
+    padding-right: var(--space-layout-xs);
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+/*****
+ ***
+ ***    Element: Tags
+ ***
+*****/
+
+.talk__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-content-xs);
+}
+
+.talk__tags a {
+    padding: 0.4rem 0.8rem;
+}
+
+.talk__tags a {
+    background-color: var(--color-secondary-lighter);
+    color: var(--color-secondary-darker);
+}
+
+.talk__tags a:link,
+.talk__tags a:visited {
+    background-color: var(--color-primary-lighter);
+    color: var(--color-primary-darker);
+}
+
+/*****
+ ***
+ ***
+ ***
+*****/
