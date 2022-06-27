@@ -40,27 +40,11 @@
 
 /*****
  ***
- ***    Layout: Grid
+ ***    Flexbox
  ***
 *****/
 
-.grid.grid--auto-fit {
-    grid-template-columns: repeat(auto-fit,
-		minmax(min(12rem, 100%), 1fr)
-	);
-}
-
-.grid.grid--auto-fill {
-    grid-template-columns: repeat(auto-fill,
-		minmax(min(12rem, 100%), 1fr)
-	);
-}
-
-.grid--wide {
-    max-width: 100%;
-}
-
-.flex--center {
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;

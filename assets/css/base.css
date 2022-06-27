@@ -10,6 +10,22 @@
 	max-width: 144rem;
 }
 
+.grid.grid--auto-fit {
+    grid-template-columns: repeat(auto-fit,
+		minmax(min(12rem, 100%), 1fr)
+	);
+}
+
+.grid.grid--auto-fill {
+    grid-template-columns: repeat(auto-fill,
+		minmax(min(12rem, 100%), 1fr)
+	);
+}
+
+.grid.grid--wide {
+    max-width: 100%;
+}
+
 .grid .col {
 	min-height: 4.8rem;
 }
@@ -82,7 +98,6 @@ header .grid {
 
 header a.logo {
     padding: var(--space-layout);
-    /* width: 19.2rem; */
 }
 
 header a.logo img {
