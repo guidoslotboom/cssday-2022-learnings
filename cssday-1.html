@@ -13,8 +13,13 @@
                 <img src="assets/images/cssday-logo.svg" alt="CSSday">
             </a>
             <nav class="nav--scroll text-lg">
-                <a href="cssday-1.html">Dag 1</a>
-                <a href="cssday-2.html">Dag 2</a>
+                <a href="cssday-1.html#jeremy">Jeremy Keith</a>
+                <a href="cssday-1.html#rachel">Rachel Andrew</a>
+                <a href="cssday-1.html#lea">Lea Verou</a>
+                <a href="cssday-1.html#bramus">Bramus van Damme</a>
+                <a href="cssday-1.html#ana">Ana Ferreira</a>
+                <a href="cssday-1.html#chris">Chris Lilley</a>
+                <a href="cssday-1.html#marcin">Marcin Wichary</a>
             </nav>
         </div>
     </header>
@@ -131,11 +136,19 @@
                 <h3>Interop 2022 / Compat 2021: 5 Focus Areas afgerond</h3>
 
                 <ol>
-                    <li><code>aspect-ratio:</code> om de beeldverhouding van het element te bepalen, <a href="https://css-tricks.com/aspect-ratio-boxes/">nooit meer padding hack!</a></li>
+                    <li><code>aspect-ratio:</code> om de beeldverhouding van het element te bepalen, <a href="https://css-tricks.com/aspect-ratio-boxes/">nooit meer de padding hack!</a></li>
                     <li><code>gap:</code> voor Flexbox is geintroduceerd.</li>
                     <li><code>self-start;</code> en <code>self-end;</code> als properties voor rtl ltr  uitlijning richting voor Flexbox en Grid.</li>
-                    <li><code>position: sticky;</code> om een element te laten plakken, eindelijk geen JavaScripts meer nodig.</li>
-                    <li><code>transform:</code> voor betere ondersteuning van <code>rotate()</code>, <code>scale()</code>, <code>skew()</code> en <code>translate()</code>.</li>
+                    <li><code>position: sticky;</code> om een element te laten plakken, eindelijk geen JavaScripts meer nodig.
+                        <div class="highlight highlight--reference">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky_positioning">Sticky positioning @ MDN Web Docs</a>
+                        </div>
+                    </li>
+                    <li><code>transform:</code> voor betere ondersteuning van <code>rotate()</code>, <code>scale()</code>, <code>skew()</code> en <code>translate()</code>.
+                        <div class="highlight highlight--reference">
+                            <a href="https://drafts.csswg.org/css-transforms-2/#individual-transforms">Individual Transform Properties @ drafts.csswg.org</a>
+                        </div>
+                    </li>
                 </ol>
 
                 <h3>Interop 2022: 10 Focus Areas in (door)ontwikkeling</h3>
@@ -147,20 +160,34 @@
                         </div>
                     </li>
                     <li>Color Spaces and Functions <code>color-mix();</code> en <code>color-contrast();</code>.</li>
-                    <li>Containment <code>contain:</code> voor het isoleren van de styling tot een bepaald element op de pagina wat ten goede komt aan de prestatie van de pagina.</li>
-                    <li><code>&lt;dialog&gt;</code> voor een native dialog/modal inclusief achtergrond styling en een JS API om het te openen of te sluiten.</li>
-                    <li><code>accent-color:</code> voor formulier elementen om in een keer de accent kleur toe te passen.</li>
+                    <li>Containment <code>contain:</code> voor het isoleren van de styling tot een bepaald element op de pagina wat ten goede komt aan de prestatie van de pagina.
+                        <div class="highlight highlight--reference">
+                            <a href="cssday-2.html#michelle">Creative CSS Layout door Michelle Barker</a>
+                        </div></li>
+                    <li><code>&lt;dialog&gt;</code> voor een native dialog/modal inclusief achtergrond styling en een JS API om het te openen of te sluiten.
+                        <div class="highlight highlight--reference">
+                            <a href="https://web.dev/building-a-dialog-component/">Building a dialog component @ web.dev</a>
+                        </div>
+                        <div class="highlight highlight--reference">
+                            <a href="https://css-tricks.com/dialog-components-roll-your-own/" target="_blank">Dialog Components: Go Native HTML or Roll Your Own? @ CSS-Tricks</a>
+                        </div>
+                    </li>
+                    <li><code>accent-color:</code> voor formulier elementen om in een keer de accent kleur toe te passen op controls en het pseudo-element <code>:checked</code>.</li>
                     <li><code>overscroll-behavior:</code> en <code>scroll-snap</code> voor scrolling. Het einde is nabij voor sliders met (veel) JavaScript.
                         <div class="highlight highlight--reference">
                             <a href="cssday-2.html#adam">Oh Snap! That Scroll Control door Adam Argyle</a>
                         </div>
                     </li>
-                    <li><code>subgrid;</code> eindelijk de optie om de grid styling te overerven van parent naar child grid.
+                    <li><code>subgrid;</code> om de grid styling te overerven van parent naar child grids.
                         <div class="highlight highlight--reference">
                             <a href="cssday-2.html#michelle">Creative CSS Layout door Michelle Barker</a>
                         </div>
                     </li>
-                    <li>Viewport Units: <code>dvh</code> dynamic viewport height, <code>lvh</code> largest viewport height en <code>svh</code> smalled viewport height. Voor betere ondersteuning van de wisselende viewport op mobiele devices.</li>
+                    <li>Viewport Units: <code>dvh</code> dynamic viewport height, <code>lvh</code> largest viewport height en <code>svh</code> smalled viewport height. Voor betere ondersteuning van de wisselende viewport op mobiele devices.
+                        <div class="highlight highlight--reference">
+                            <a href="https://www.bram.us/2021/07/08/the-large-small-and-dynamic-viewports/">The Large, Small, and Dynamic Viewports @ bram.us</a>
+                        </div>
+                    </li>
                 </ol>
 
                 <h3>Voortgang van de Focus Areas</h3>
@@ -313,6 +340,7 @@
                     <li><a href="https://www.bram.us/2021/09/15/the-future-of-css-cascade-layers-css-at-layer/" target="_blank">The Future of CSS: Cascade Layers (CSS @layer)</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer" target="_blank">MDN Web Docs: @layer</a></li>
                     <li><a href="https://caniuse.com/mdn-css_at-rules_layer" target="_blank">Can I Use: @layer</a></li>
+                    <li><a href="https://ishadeed.com/article/css-has-parent-selector/" target="_blank">CSS Parent Selector @ ishadeed.com</a></li>
                 </ul>
 
                 <!-- Talk: Slides & Video -->
@@ -456,7 +484,7 @@
                 <p>Er zijn namelijk verschillende aanduidingen voor een lettergewicht:</p>
 
                 <ul>
-                    <li>In CSS declareer je een getalswaarde van 100 t/m 900 voor de <code>font-weight</code>, afhankelijk van hoe uitgebreid het font is worden de getalswaardes in stappen van 100 ondersteund. In het geval van het Google Font Source Sans Pro:<br> <span class="text-200">200</span>, <span class="text-300">300</span>, <span class="text-400">400</span>, <span class="text-600">600</span>, <span class="text-700">700</span> en <span class="text-900">900</span>.</li>
+                    <li>In CSS zijn er voor <code>font-weight</code> getalswaardes van 100 t/m 900, afhankelijk van hoe uitgebreid het font is worden de getalswaardes in stappen van 100 ondersteund. In het geval van het Google Font Source Sans Pro:<br> <span class="text-200">200</span>, <span class="text-300">300</span>, <span class="text-400">400</span>, <span class="text-600">600</span>, <span class="text-700">700</span> en <span class="text-900">900</span>.</li>
                     <li>In applicaties hebben lettergewichten een naam bijvoorbeeld:<br> <span class="text-200">ExtraLight</span>, <span class="text-300">Light</span>, <span class="text-400">Regular</span>, <span class="text-600">SemiBold</span>, <span class="text-700">Bold</span> en <span class="text-900">Black</span></li>
                     <li>Wat als het font geen standaard bold lettergewicht heeft? Pak je dan het eerst volgende lettergewicht en tot hoever ga je? Want wordt het verschil tussen het basis lettergewicht <span class="text-400">Regular / 400</span> dan niet te groot als bijvoorbeeld <span class="text-900">Black / 900</span> wordt opgepakt voor dikgedrukte tekst?</li>
                 </ul>
