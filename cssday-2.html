@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dag 1 - CSS day 2022 learnings</title>
+<title>Dag 2 - CSS day 2022 learnings</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -23,7 +23,7 @@
 
             <!-- Talk: Adam Argyle -->
 
-            <article class="talk article col" id="michelle">
+            <article class="talk article col" id="adam">
                     
                 <!-- Talk: Topic -->
 
@@ -53,9 +53,104 @@
 
                 <!-- Talk: Summary -->
 
+                <p>De tweede dag van CSSday 2022 werd meteen vol energie en humor afgetrapt met Adam die werkzaam is bij Google. Zijn talk ging over <code>scroll-snap</code> waarin hij toelichting gaf op de diverse <code>CSS-properties</code> en bijbehorende <code>CSS-values</code> van <code>scroll-snap</code> en liet daarbij meteen ook een tal van voorbeelden en situaties zien die erg bruikbaar zijn bij onze werkzaamheden.</p>
+
+                <h3>Overflow samengevat</h3>
+
+                <ul>
+                    <li><code>overflow-x:</code> of <code>overflow-y:</code> is de eerste stap op de container waar we uiteindelijk <code>scroll-snap</code> op willen toepassen. Hierbij kan je ook gebruikt maken van <code>direction:</code> om de scroll richting te veranderen met de waardes <code>rtl;</code> of <code>ltr;</code></li>
+                    <li><code>overflow-block:</code> stelt in wat wordt weergegeven wanneer inhoud de blokbegin- en blokeindranden van een vak overloopt.</li>
+                    <li><code>overflow-inline:</code> stelt in wat wordt weergegeven wanneer inhoud de inline begin- en eindranden van een vak overloopt.</li>
+                </ul>
+
+                <h3>Belangrijk om te weten</h3>
+
+                <ul>
+                    <li><strong>Root scroller:</strong> Dit is eigenlijk altijd het <code>&lt;html&gt;</code>-element. Al kan een fullscreen overlay-div zich ook voor doen als root scroller.</li>
+                    <li><strong>Implicit scrollers:</strong> Alle andere schuifbare elementen, die niet tot de root-scroller behoren.
+                        <ul>
+                            <li><strong>Scroll port</strong> Het kader, ook wel viewport genoemd, van het scroll gebied.</li>
+                            <li><strong>Overscroll behavior:</strong> Hoe het moet reageren bij het bereiken van het begin of einde van de scroll container.</li>
+                            <li><strong>Overscroll effect:</strong> Dat is een visuele terugkoppeling van de UI om de gebruiker te informeren dat de scroll container zich aan het begin of einde bevindt.</li>
+                            <li><strong>Scroll hint:</strong> Dat is een visueel element in de UI om gebruikers te attanderen dat het een scroll gebied is. Veelal zie je dat de inhoud wordt afgekapt of dat er gebruikt wordt van een shaduw of kleurverloop.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>De basis van scroll-snap</h3>
+
+                <ul>
+                    <li><code>scroll-snap-type:</code> voor de scrollport.</li>
+                    <li><code>scroll-snap-align:</code> voor de scroll items.</li>
+                    <li><code>scroll-snap-stop:</code> defineert het punt waarop de scroll gestopt moet worden. Pas op met hoe je het toepast, want het kan voor een vervelende gebruikerservaring zorgen.</li>
+                    <li><code>scroll-padding:</code> defineert de offsets van de scrollport.</li>
+                    <li><code>scroll-margin:</code> defineert de ruimte tussen de scroll items.</li>
+                </ul>
+
+                <p class="highlight highlight--reference">
+                    Een aantal voorbeelden die Adam liet zien zijn hier terug te zien: <a href="https://snap-gallery.netlify.app/" target="_blank">CSS Scroll Snap Gallery</a>
+                </p>
+
+                <blockquote>
+                    “Isn't this great? And I made it all by myself”
+                    <cite>Adam Argyle</cite>
+                </blockquote>
+
+                <h4>Chrome DevTools en scroll-snap</h4>
+
+                <p>In de Chrome is het met DeveloperTool mogelijk om een <code>scroll-snap</code> element uit te lichten en de snap punten te bekijken.
+                    <div class="highlight highlight--reference">
+                        <a href="https://developer.chrome.com/blog/new-in-devtools-91/#css-croll-snap" target="_blank">Visualize CSS scroll-snap @ developer.chrome.com</a>
+                    </div>
+                </p>
+
+                <h3>Handig in combinatie met scroll-snap</h3>
+
+                <ul>
+                    <li><code>Element.scrollIntoView()</code> een JavaScript functie om een specifiek element in beeld te laten schuiven.
+                        <div class="highlight highlight--reference">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView" target="_blank"> Element.scrollIntoView() @ MDN Web Docs</a>
+                        </div>
+                    </li>
+                    <li><strong>Snap after layout:</strong> Dit zorgt ervoor dat het snappunt behouden blijft bij het wijzigen van formaat van het vester of een mobile device wordt gedraaid.
+                        <div class="highlight highlight--reference">
+                            <a href="https://web.dev/snap-after-layout/" target="_blank">Scroll snapping after layout changes @ web.dev</a>
+                        </div>
+                    </li>
+                    <li><code>IntersectionObserver()</code> om items te observeren, zodat je kan achterhalen welk item momenteel in beeld is of waarmee je iets kan activeren als een specifiek item in beeld komt.
+                        <div class="highlight highlight--reference">
+                            <a href="https://www.bram.us/2017/08/03/using-intersection-observers/" target="_blank">Using Intersection Observers @ bram.us</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Scroll-snap in volle ontwikkeling</h4>
+
+                <p>Ook werden er een aantal toekomstige scroll-snap functies door Adam toegelicht en getoond zoals <code>:snapped</code>, <code>scroll-start:</code>, <code>snapChanging()</code> en <code>snapTo()</code>. Deze maken onderdeel uit van Module Level 2 van Scroll Snap.
+                    <div class="highlight highlight--reference">
+                        <a href="https://drafts.csswg.org/css-scroll-snap-2/" target="_blank">CSS Scroll Snap Module Level 2 @ drafts.csswg.org</a>
+                    </div>
+                </p>
+
+                <p></p>
+
                 <!-- Talk: Bookmarks -->
 
+                <h3>Bookmarks</h4>
+
+                <ul>
+                    <li><a href="https://snap-gallery.netlify.app/" target="_blank">CSS Scroll Snap Gallery</a></li>
+                    <li><a href="https://web.dev/css-scroll-snap/" target="_blank">Well-controlled scrolling with CSS Scroll Snap</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts" target="_blank">MDN Web Docs: Basic concepts of CSS Scroll Snap</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type" target="_blank">MDN Web Docs: scroll-snap-type</a></li>
+                    <li><a href="https://caniuse.com/?search=scroll-snap" target="_blank">Can I Use: scroll-snap</a></li>
+                </ul>
+
                 <!-- Talk: Slides & Video -->
+
+                <p class="highlight highlight--reference">
+                    Bekijk de slides: <a href="https://oh-snap.netlify.app/" target="_blank">Oh Snap! That Scroll Control @ Netlify</a>
+                </p>
                 
             </article>
 

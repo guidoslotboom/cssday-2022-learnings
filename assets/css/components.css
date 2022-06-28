@@ -208,15 +208,16 @@
 .highlight {
     display: block;
     padding: var(--space-content-sm) var(--space-content-sm);
+    margin-top: var(--space-content-sm);
+    font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
 }
 
 .highlight--reference {
     background-color: var(--color-primary-lighter);
 }
 
-ul li .highlight,
-ol li .highlight {
-    margin-top: var(--space-content-xs);
+p.highlight {
+    margin-top: var(--space-content-md);
 }
 
 /*****
