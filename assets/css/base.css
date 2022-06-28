@@ -203,3 +203,15 @@ blockquote cite:before {
     content: "—";
     margin-inline: var(--space-content-xs);
 }
+
+/*****
+ ***
+ ***    Elements: Figure, Image & Figcaption
+ ***
+*****/
+
+figcaption {
+    color: var(--color-secondary-darker);
+    font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
+    text-align: center;
+}

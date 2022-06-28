@@ -248,10 +248,22 @@ p.highlight {
     display: grid;
     width: 100%;
     gap: var(--space-layout-sm);
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
 }
 
 .talk__gallery img {
     width: 100%;
     aspect-ratio: 1;
+}
+
+@media only screen and (min-width: 561px) {
+    .talk__gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .talk__gallery {
+        grid-template-rows: 1fr 1fr;
+    }
 }
