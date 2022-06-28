@@ -26,10 +26,6 @@
     max-width: 100%;
 }
 
-.grid .col {
-	min-height: 4.8rem;
-}
-
 .grid:is(main > div, footer > div) {
     padding: var(--space-layout);
     gap: var(--space-layout);
@@ -83,6 +79,7 @@ main .grid {
 
 footer {
     background-color: var(--bg-color-dark);
+    color: var(--color-secondary-dark);
 }
 
 /*****
@@ -108,7 +105,12 @@ header nav {
     display: flex;
     padding: var(--space-layout-md);
     align-items: center;
-    gap: var(--space-layout-md)
+    gap: var(--space-layout-md);
+}
+
+header nav a {
+    font-size: clamp(1.6rem, 0.5vw + var(--relative-size), 1.8rem);
+    color: var(--white);
 }
 
 .nav--scroll {

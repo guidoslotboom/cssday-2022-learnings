@@ -38,6 +38,18 @@
     font-size: clamp(1.4rem, 0.4vw + var(--relative-size), 1.6rem);
 }
 
+.txt-left {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
 .text-200 {
     font-weight: 200;
 }
@@ -64,7 +76,7 @@
 
 /*****
  ***
- ***    Flexbox
+ ***    Flexbox & Grid
  ***
 *****/
 
@@ -72,4 +84,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.fluid-test .grid .col {
+	min-height: 4.8rem;
 }
