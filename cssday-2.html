@@ -468,9 +468,60 @@
 
                 <!-- Talk: Summary -->
 
+                <p>Tab stond op dag 1 van CSSday 2022 als MC op het podium en op dag 2 heeft hij zijn eigen talk wat over de toekomst van het organiseren van de styling gaat. In zijn talk heeft hij het over de <strong>Shadow DOM</strong> met het bijbehorende pseudo-element <code>::part()</code> en gaat hij dieper in op de nieuwe CSS modules <strong>Nesting</strong> en <strong>Scoping</strong> met de voordelen en laat daarbij meteen een aantal voorbeelden zien.</p>
+
+                <h3>Shadow DOM</h3>
+
+                <p>Een probleem waar je tegenaan kan lopen is dat webpagina's en CSS steeds groter worden. De prestaties van een website en een webpagina in het specifiek kan hierdoor negatief worden beïnvloed. De prestaties van CSS worden bepaald door de DOM-grootte * aantal CSS-selectoren. Door gebruik te maken van de Shadow DOM, waardoor je delen van een webpagina gaat opdelen in kleine stukjes, optimaliseer je de prestatie van de CSS.</p>
+
+                <div class="talk__gallery">
+                    <figure>
+                        <img src="assets/images/talk-tab-atkins-bittner-shadow-dom.jpg" alt="Shadow DOM">
+                        <figcaption>Shadow DOM</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/images/talk-tab-atkins-bittner-scope.jpg" alt="@scope nesting does work">
+                        <figcaption>@scope nesting does work</figcaption>
+                    </figure>
+                </div>
+
+                <h3>Scoping</h3>
+
+                <p>Een CSS module in ontwikkeling waardoor je de styling kan beperken tot een specifiek element wat bijvoorbeeld handig is voor thema's en donker vs light contrast elementen.</p>
+
+                <blockquote>
+                    “Limits styles to a 'donut'”
+                    <cite>Tab Atkins-Bittner</cite>
+                </blockquote>
+
+                <div class="highlight highlight--reference">
+                    <a href="https://www.w3.org/TR/css-cascade-6/#scoped-styles" target="_blank">CSS Cascading and Inheritance Level 6: 2.5 Scope Styles @ w3.org</a>
+                </div>
+
+                <h3>Nesting</h3>
+
+                <p>Een CSS module in ontwikkeling waardoor je de styling bijna net zo kan nesten als in Sass. Er zijn wel een aantal verschillen een daarvan is dat je gebruikt maakt van <code>&</code> of vanwege de CSS-parsering complexiteit zelfs <code>@nest &</code>. Mede daardoor is alle feedback welkom, zie <a href="https://github.com/w3c/csswg-drafts/issues/4748" target="_blank">w3c / csswg-drafts: [css-nesting] Syntax suggestion #4748</a>.</p>
+
+                <div class="highlight highlight--reference">
+                    <a href="https://www.w3.org/TR/css-nesting-1/" target="_blank">CSS Nesting Module @ w3.org</a>
+                </div>
+
                 <!-- Talk: Bookmarks -->
 
+                <h3>Bookmarks</h4>
+
+                <ul>
+                    <li><a href="https://css-tricks.com/early-days-for-css-scoping/" target="_blank">Early Days for CSS Scoping @ CSS-Tricks</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=DhArSHAR8rY" target="_blank">Nesting CSS, by Adam Argyle @ YouTube</a></li>
+                    <li><a href="https://dev.to/akashshyam/selector-nesting-has-come-to-css-532i" target="_blank">Selector Nesting Has Come to CSS!!! @ dev.to</a></li>
+                    <li><a href="https://css-tricks.com/css-nesting-specificity-and-you/" target="_blank">CSS Nesting, specificity, and you @ CSS-Tricks</a></li>
+                </ul>
+
                 <!-- Talk: Slides & Video -->
+
+                <p class="highlight highlight--reference">
+                    Bekijk de slides: <a href="https://xanthir.com/talks/2022-06-10/" target="_blank">The Future of Organizing Your CSS @ xanthir.com</a>
+                </p>
                 
             </article>
 
