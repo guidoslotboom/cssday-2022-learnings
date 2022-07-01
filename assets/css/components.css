@@ -244,16 +244,18 @@ p.highlight {
  ***
 *****/
 
-.talk__gallery {
+.talk__gallery,
+.talk__image {
     display: grid;
     width: 100%;
     gap: var(--space-layout-sm);
     /* grid-template-columns: 1fr 1fr; */
 }
 
-.talk__gallery img {
+.talk__gallery img,
+.talk__image img {
     width: 100%;
-    aspect-ratio: 1;
+    object-fit: contain;
 }
 
 @media only screen and (min-width: 561px) {
