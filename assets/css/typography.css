@@ -60,6 +60,10 @@ cite {
     font-weight: 400;
 }
 
+i {
+    font-style: italic;
+}
+
 /** **/
 
 a:link,
