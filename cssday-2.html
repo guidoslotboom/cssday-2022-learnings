@@ -66,7 +66,7 @@
 
                 <!-- Talk: Summary -->
 
-                <p>De tweede dag van CSSday 2022 werd meteen vol energie en humor afgetrapt met Adam die werkzaam is bij Google. Zijn talk ging over <code>scroll-snap</code> waarin hij toelichting gaf op de diverse <code>CSS-properties</code> en bijbehorende <code>CSS-values</code> van <code>scroll-snap</code> en liet daarbij meteen ook een tal van voorbeelden en situaties zien die erg bruikbaar zijn bij onze werkzaamheden.</p>
+                <p>De tweede dag van CSSday 2022 werd meteen vol energie en humor afgetrapt door Adam die werkzaam is bij Google. Zijn talk ging over <code>scroll-snap</code> waarin hij toelichting gaf op de diverse <i>CSS-properties</i> en bijbehorende <i>CSS-values</i> van <code>scroll-snap</code> en liet daarbij meteen ook een tal van voorbeelden en situaties zien die erg bruikbaar zijn bij onze werkzaamheden.</p>
 
                 <h3>Overflow samengevat</h3>
 
@@ -79,13 +79,13 @@
                 <h3>Belangrijk om te weten</h3>
 
                 <ul>
-                    <li><strong>Root scroller:</strong> Dit is eigenlijk altijd het <code>&lt;html&gt;</code>-element. Al kan een fullscreen overlay-div zich ook voor doen als root scroller.</li>
+                    <li><strong>Root scroller:</strong> Dit is eigenlijk altijd het <code>&lt;html&gt;</code>-element, al kan een fullscreen overlay-div zich ook voor doen als root scroller.</li>
                     <li><strong>Implicit scrollers:</strong> Alle andere schuifbare elementen, die niet tot de root-scroller behoren.
                         <ul>
-                            <li><strong>Scroll port</strong> Het kader, ook wel viewport genoemd, van het scroll gebied.</li>
-                            <li><strong>Overscroll behavior:</strong> Hoe het moet reageren bij het bereiken van het begin of einde van de scroll container.</li>
-                            <li><strong>Overscroll effect:</strong> Dat is een visuele terugkoppeling van de UI om de gebruiker te informeren dat de scroll container zich aan het begin of einde bevindt.</li>
-                            <li><strong>Scroll hint:</strong> Dat is een visueel element in de UI om gebruikers te attanderen dat het een scroll gebied is. Veelal zie je dat de inhoud wordt afgekapt of dat er gebruikt wordt van een shaduw of kleurverloop.</li>
+                            <li><strong>Scroll port</strong> Het kader, ook wel <i>viewport</i> genoemd, van een <i>scroll area</i>.</li>
+                            <li><strong>Overscroll behavior:</strong> Hoe het moet reageren bij het bereiken van het begin of einde van de <i>scroll container</i>.</li>
+                            <li><strong>Overscroll effect:</strong> Dat is een visuele terugkoppeling van de UI om de gebruiker te informeren dat de <i>scroll container</i> zich aan het begin of einde bevindt.</li>
+                            <li><strong>Scroll hint:</strong> Dat is een visueel element in de UI om gebruikers te attanderen dat het een <i>scroll area</i> is. Veelal zie je dat de inhoud wordt afgekapt of dat er gebruikt wordt van een shaduw of kleurverloop.</li>
                         </ul>
                     </li>
                 </ul>
@@ -93,10 +93,10 @@
                 <h3>De basis van scroll-snap</h3>
 
                 <ul>
-                    <li><code>scroll-snap-type:</code> voor de scrollport.</li>
-                    <li><code>scroll-snap-align:</code> voor de scroll items.</li>
+                    <li><code>scroll-snap-type:</code> voor de <i>scrollport</i>.</li>
+                    <li><code>scroll-snap-align:</code> voor de <i>scroll items</i>.</li>
                     <li><code>scroll-snap-stop:</code> defineert het punt waarop de scroll gestopt moet worden. Pas op met hoe je het toepast, want het kan voor een vervelende gebruikerservaring zorgen.</li>
-                    <li><code>scroll-padding:</code> defineert de offsets van de scrollport.</li>
+                    <li><code>scroll-padding:</code> defineert de offsets van de <i>scrollport</i>.</li>
                     <li><code>scroll-margin:</code> defineert de ruimte tussen de scroll items.</li>
                 </ul>
 
@@ -136,7 +136,7 @@
                             <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView" target="_blank"> Element.scrollIntoView() @ MDN Web Docs</a>
                         </div>
                     </li>
-                    <li><strong>Snap after layout:</strong> Dit zorgt ervoor dat het snappunt behouden blijft bij het wijzigen van formaat van het vester of een mobile device wordt gedraaid.
+                    <li><strong>Snap after layout:</strong> Dit zorgt ervoor dat het <i>snap point</i> behouden blijft bij het wijzigen van formaat van het vester of een mobile device wordt gedraaid.
                         <div class="highlight highlight--reference">
                             <a href="https://web.dev/snap-after-layout/" target="_blank">Scroll snapping after layout changes @ web.dev</a>
                         </div>
@@ -148,11 +148,11 @@
                     </li>
                 </ul>
 
-                <h4>Scroll-snap in volle ontwikkeling</h4>
+                <h4>Scroll-snap vol in ontwikkeling</h4>
 
-                <p>Ook werden er een aantal toekomstige scroll-snap functies door Adam toegelicht en getoond zoals <code>:snapped</code>, <code>scroll-start:</code>, <code>snapChanging()</code> en <code>snapTo()</code>. Deze maken onderdeel uit van Module Level 2 van Scroll Snap.
+                <p>Ook werden er een aantal toekomstige scroll-snap functies door Adam toegelicht en getoond zoals <code>:snapped</code>, <code>scroll-start:</code>, <code>snapChanging()</code> en <code>snapTo()</code>. Deze maken onderdeel uit van CSS Scroll Snap Level 2.
                     <div class="highlight highlight--reference">
-                        <a href="https://drafts.csswg.org/css-scroll-snap-2/" target="_blank">CSS Scroll Snap Module Level 2 @ drafts.csswg.org</a>
+                        <a href="https://drafts.csswg.org/css-scroll-snap-2/" target="_blank">CSS Scroll Snap Level 2 @ drafts.csswg.org</a>
                     </div>
                 </p>
 
@@ -235,9 +235,9 @@
                             Voorbeeld: <a href="https://codepen.io/michellebarker/pen/WNMbgEw" target="_blank">Subgrid @ Codepen</a><br> <strong class="text-sm">Let op check <a href="https://caniuse.com/?search=subgrid" target="_blank">Can I Use Subgrid</a> voor de browser ondersteuning</strong>
                         </div>
                     </li>
-                    <li><code>gap:</code> voor Flexbox is geintroduceerd waardoor de property nu zowel werkt voor Flexbox als Grid.
+                    <li><code>gap:</code> voor Flexbox is geintroduceerd waardoor dit <i>CSS-property</i> nu zowel werkt voor Flexbox als Grid.
                     </li>
-                    <li><code>min()</code>, <code>max()</code> en <code>clamp()</code> voor het toepassen van fluid gaps en typography: 
+                    <li><code>min()</code>, <code>max()</code> en <code>clamp()</code> te gebruiken voor onder andere <i>fluid spacing & typography</i>: 
                         <ul>
                             <li><code>min(MIN, MAX)</code></li>
                             <li><code>max(MAX, MIN)</code></li>
@@ -249,7 +249,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><code>aspect-ratio:</code> en <code>object-fit:</code> zijn een krachtige combinatie om de volledige controle over de verhouding van een afbeelding met stijling te bepalen. <code>aspect-ratio:</code> kan daarnaast ook gebruikt worden in een grid.
+                    <li><code>aspect-ratio:</code> en <code>object-fit:</code> zijn een krachtige combinatie om de volledige controle over de verhouding van een afbeelding met stijling te bepalen. In een <i>grid</i> kan <code>aspect-ratio:</code> ook gebruikt worden om de verhoudingen van de <i>child elements</i> in het <i>grid</i> vast te zetten.
                         <div class="highlight highlight--reference">
                             Voorbeeld: <a href="https://codepen.io/michellebarker/pen/YzeqRrP" target="_blank">aspect-ratio grids @ Codepen</a>
                         </div>
@@ -266,12 +266,12 @@
                     </li>
                     <li>Relative units voor <code>@container</code>, welke specifieker zijn voor de flexibele groottes van een of meer elementen in een <code>@container</code>: 
                         <ul>
-                            <li><code>cqw</code> query container breedte</li>
-                            <li><code>cqh</code> query container hoogte</li>
-                            <li><code>cqi</code> query container inline grootte</li>
-                            <li><code>qpb</code> query container block grootte</li>
-                            <li><code>cqmin</code> kleinste query container inline grootte of block grootte</li>
-                            <li><code>cqmax</code> grootste query container inline grootte of block grootte</li>
+                            <li><code>cqw</code>, query unit voor de container breedte</li>
+                            <li><code>cqh</code>, query unit voor de container hoogte</li>
+                            <li><code>cqi</code>, query unit voor de container inline grootte</li>
+                            <li><code>qpb</code>, query unit voor de container block grootte</li>
+                            <li><code>cqmin</code>, voor de kleinste query container inline grootte of block grootte</li>
+                            <li><code>cqmax</code>, voor de grootste query container inline grootte of block grootte</li>
                         </ul>
                         <div class="highlight highlight--reference">
                             <strong class="text-sm">Let op check <a href="https://caniuse.com/css-container-query-units" target="_blank">Can I Use Container Query Units</a> voor de browser ondersteuning</strong>
@@ -530,11 +530,11 @@
 
                 <!-- Talk: Summary -->
 
-                <p>Tab stond op dag 1 van CSSday 2022 als MC op het podium en op dag 2 heeft hij zijn eigen talk wat over de toekomst van het organiseren van de styling gaat. In zijn talk heeft hij het over de <strong>Shadow DOM</strong> met het bijbehorende pseudo-element <code>::part()</code> en gaat hij dieper in op de nieuwe CSS modules <strong>Nesting</strong> en <strong>Scoping</strong> met de voordelen en laat daarbij meteen een aantal voorbeelden zien.</p>
+                <p>Tab stond op dag 1 van CSSday 2022 als MC op het podium en op dag 2 heeft hij zijn eigen talk wat over de toekomst van het organiseren van de styling gaat. In zijn talk heeft hij het over de <strong>Shadow DOM</strong> met het bijbehorende <i>pseudo-element</i> <code>::part()</code> en gaat hij dieper in op de nieuwe CSS modules <strong>Nesting</strong> en <strong>Scoping</strong> met de voordelen en laat daarbij meteen een aantal voorbeelden zien.</p>
 
                 <h3>Shadow DOM</h3>
 
-                <p>Een probleem waar je tegenaan kan lopen is dat webpagina's en CSS steeds groter worden. De prestaties van een website en een webpagina in het specifiek kan hierdoor negatief worden beïnvloed. De prestaties van CSS worden bepaald door de DOM-grootte * aantal CSS-selectoren. Door gebruik te maken van de Shadow DOM, waardoor je delen van een webpagina gaat opdelen in kleine stukjes, optimaliseer je de prestatie van de CSS.</p>
+                <p>Een probleem waar je tegenaan kan lopen is dat webpagina's en CSS steeds groter worden. De prestaties van een website en een webpagina in het specifiek kan hierdoor negatief worden beïnvloed. De prestaties van CSS worden bepaald door de <i>DOM size</i> * aantal <i>CSS-selectors</i>. Door gebruik te maken van de Shadow DOM, waardoor je delen van een webpagina gaat opdelen in kleine stukjes, optimaliseer je de prestatie van de CSS.</p>
 
                 <div class="talk__gallery">
                     <figure>
@@ -562,7 +562,7 @@
 
                 <h3>Nesting</h3>
 
-                <p>Een CSS module in ontwikkeling waardoor je de styling bijna net zo kan nesten als in Sass. Er zijn wel een aantal verschillen een daarvan is dat je gebruikt maakt van <code>&</code> of vanwege de CSS-parsering complexiteit zelfs <code>@nest &</code>. Mede daardoor is alle feedback welkom, zie <a href="https://github.com/w3c/csswg-drafts/issues/4748" target="_blank">w3c / csswg-drafts: [css-nesting] Syntax suggestion #4748</a>.</p>
+                <p>Een CSS module in ontwikkeling waardoor je de styling bijna net zo kan nesten als in Sass. Er zijn wel een aantal verschillen een daarvan is dat je gebruikt maakt van <code>&</code> of vanwege de <i>CSS-parsing</i> complexiteit zelfs <code>@nest &</code>. Mede daardoor is alle feedback welkom, zie <a href="https://github.com/w3c/csswg-drafts/issues/4748" target="_blank">w3c / csswg-drafts: [css-nesting] Syntax suggestion #4748</a>.</p>
 
                 <div class="highlight highlight--reference">
                     <a href="https://www.w3.org/TR/css-nesting-1/" target="_blank">CSS Nesting Module @ w3.org</a>
@@ -619,7 +619,9 @@
 
                 <!-- Talk: Summary -->
 
-                <p>Stephan is een <strong>designer-who-codes</strong> heeft net als een aantal andere speakers vaker op het CSSday podium en dit keer sluit hij de CSSday 2022 conferentie af. Een leuk feitje over hem is dat hij Amerikaans is, maar al heel wat jaren in Nederland woont en werkzaam is. Met zijn eigen bedrijf Zero Interface heeft hij gewerkt voor bedrijven als het Ministerie van Binnenlandse Zaken, Ministerie van Financiën, Nuon/Vattenfall en Zalando. Nu is sinds 2019 werkzaam als Creative Director bij de Rabobank.</p>
+                <p>Stephan is een <strong>designer-who-codes</strong> heeft net als een aantal andere speakers vaker op het CSSday podium en dit keer sluit hij de CSSday 2022 conferentie af. Een leuk feitje over hem is dat hij Amerikaans is, maar al heel wat jaren in Nederland woont en werkzaam is.</p>
+                
+                <p>Met zijn eigen bedrijf Zero Interface heeft hij gewerkt voor bedrijven als het Ministerie van Binnenlandse Zaken, Ministerie van Financiën, Nuon/Vattenfall en Zalando. Nu is sinds 2019 werkzaam als Creative Director bij de Rabobank.</p>
 
                 <p>De talk van Stephan gaat over design systems en of dit nou wel of niet de <strong>holy bible</strong> voor design moeten zijn.</p>
 
