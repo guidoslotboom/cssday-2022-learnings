@@ -66,9 +66,9 @@
 
                 <!-- Talk: Summary -->
 
-                <p>De tweede dag van CSSday 2022 werd meteen vol energie en humor afgetrapt door Adam die werkzaam is bij Google. Zijn talk ging over <code>scroll-snap</code> waarin hij toelichting gaf op de diverse <i>CSS-properties</i> en bijbehorende <i>CSS-values</i> van <code>scroll-snap</code> en liet daarbij meteen ook een tal van voorbeelden en situaties zien die erg bruikbaar zijn bij onze werkzaamheden.</p>
+                <p id="adam-scroll-snap">De tweede dag van CSSday 2022 werd meteen vol energie en humor afgetrapt door Adam die werkzaam is bij Google. Zijn talk ging over <code>scroll-snap</code> waarin hij toelichting gaf op de diverse <i>CSS-properties</i> en bijbehorende <i>CSS-values</i> van <code>scroll-snap</code> en liet daarbij meteen ook een tal van voorbeelden en situaties zien die erg bruikbaar zijn bij onze werkzaamheden.</p>
 
-                <h3>Overflow samengevat</h3>
+                <h3 id="adam-scroll-overflow">Overflow samengevat</h3>
 
                 <ul>
                     <li><code>overflow-x:</code> of <code>overflow-y:</code> is de eerste stap op de container waar we uiteindelijk <code>scroll-snap</code> op willen toepassen. Hierbij kan je ook gebruikt maken van <code>direction:</code> om de scroll richting te veranderen met de waardes <code>rtl;</code> of <code>ltr;</code></li>
@@ -76,7 +76,7 @@
                     <li><code>overflow-inline:</code> stelt in wat wordt weergegeven wanneer inhoud de inline begin- en eindranden van een vak overloopt.</li>
                 </ul>
 
-                <h3>Belangrijk om te weten</h3>
+                <h3 id="adam-scroll-glossary">Belangrijk om te weten</h3>
 
                 <ul>
                     <li><strong>Root scroller:</strong> Dit is eigenlijk altijd het <code>&lt;html&gt;</code>-element, al kan een fullscreen overlay-div zich ook voor doen als root scroller.</li>
@@ -90,7 +90,7 @@
                     </li>
                 </ul>
 
-                <h3>De basis van scroll-snap</h3>
+                <h3 id="adam-scroll-snap-basics">De basis van scroll-snap</h3>
 
                 <ul>
                     <li><code>scroll-snap-type:</code> voor de <i>scrollport</i>.</li>
@@ -111,7 +111,7 @@
                     </figure>
                 </div>
 
-                <p class="highlight highlight--reference">
+                <p id="adam-scroll-snap-examples" class="highlight highlight--reference">
                     Een aantal voorbeelden die Adam liet zien zijn hier terug te zien: <a href="https://snap-gallery.netlify.app/" target="_blank">CSS Scroll Snap Gallery</a>
                 </p>
 
@@ -120,15 +120,15 @@
                     <cite>Adam Argyle</cite>
                 </blockquote>
 
-                <h4>Chrome DevTools en scroll-snap</h4>
+                <h4 id="adam-chrome-devtools">Chrome DevTools en scroll-snap</h4>
 
-                <p>In de Chrome is het met DeveloperTool mogelijk om een <code>scroll-snap</code> element uit te lichten en de snap punten te bekijken.
+                <p>In de Chrome is het met DeveloperTool mogelijk om een <code>scroll-snap</code> element uit te lichten en de <i>snap points</i> te bekijken.
                     <div class="highlight highlight--reference">
                         <a href="https://developer.chrome.com/blog/new-in-devtools-91/#css-croll-snap" target="_blank">Visualize CSS scroll-snap @ developer.chrome.com</a>
                     </div>
                 </p>
 
-                <h3>Handig in combinatie met scroll-snap</h3>
+                <h3 id="adam-scroll-snap-advanced">Wat er nog meer kan met scroll-snap</h3>
 
                 <ul>
                     <li><code>Element.scrollIntoView()</code> een JavaScript functie om een specifiek element in beeld te laten schuiven.
@@ -148,7 +148,7 @@
                     </li>
                 </ul>
 
-                <h4>Scroll-snap vol in ontwikkeling</h4>
+                <h4 id="adam-scroll-snap-future">Scroll-snap vol in ontwikkeling</h4>
 
                 <p>Ook werden er een aantal toekomstige scroll-snap functies door Adam toegelicht en getoond zoals <code>:snapped</code>, <code>scroll-start:</code>, <code>snapChanging()</code> en <code>snapTo()</code>. Deze maken onderdeel uit van CSS Scroll Snap Level 2.
                     <div class="highlight highlight--reference">
@@ -212,7 +212,7 @@
 
                 <p>Door de komst van Flexbox en Grid en de doorontwikkeling van beide lay-out modellen met nieuwe mogelijkheden welke inzetbaar zijn voor beide ontstaan er nieuwe creatieve mogelijkheden voor een veel meer flexibeler web.</p>
 
-                <h3>Flexbox or grid?</h3>
+                <h3 id="michelle-flexbox-or-grid">Flexbox or grid?</h3>
 
                 <p>Het antwoord is zoals gewoonlijk: een of beide, want het is afhankelijk van het doel en ieder lay-out model heeft zijn eigen kracht. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">Flexbox is er voor one-dimensional lay-outs</a> en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout" target="_blank">Grid is meer geschikt voor two-dimensional layouts</a>.</p>
 
@@ -230,14 +230,14 @@
                 <h3>Opsomming van de nieuwste mogelijkheden</h3>
 
                 <ul>
-                    <li><code>subgrid;</code> om de grid styling te overerven van parent naar child grids.
+                    <li id="michelle-subgrid"><code>subgrid;</code> om de grid styling te overerven van parent naar child grids.
                         <div class="highlight highlight--reference">
                             Voorbeeld: <a href="https://codepen.io/michellebarker/pen/WNMbgEw" target="_blank">Subgrid @ Codepen</a><br> <strong class="text-sm">Let op check <a href="https://caniuse.com/?search=subgrid" target="_blank">Can I Use Subgrid</a> voor de browser ondersteuning</strong>
                         </div>
                     </li>
-                    <li><code>gap:</code> voor Flexbox is geintroduceerd waardoor dit <i>CSS-property</i> nu zowel werkt voor Flexbox als Grid.
+                    <li id="michelle-gap"><code>gap:</code> voor Flexbox is geintroduceerd waardoor dit <i>CSS-property</i> nu zowel werkt voor Flexbox als Grid.
                     </li>
-                    <li><code>min()</code>, <code>max()</code> en <code>clamp()</code> te gebruiken voor onder andere <i>fluid spacing & typography</i>: 
+                    <li id="michelle-fluid-layout"><code>min()</code>, <code>max()</code> en <code>clamp()</code> te gebruiken voor onder andere <i>fluid spacing & typography</i>: 
                         <ul>
                             <li><code>min(MIN, MAX)</code></li>
                             <li><code>max(MAX, MIN)</code></li>
@@ -249,22 +249,22 @@
                             </li>
                         </ul>
                     </li>
-                    <li><code>aspect-ratio:</code> en <code>object-fit:</code> zijn een krachtige combinatie om de volledige controle over de verhouding van een afbeelding met stijling te bepalen. In een <i>grid</i> kan <code>aspect-ratio:</code> ook gebruikt worden om de verhoudingen van de <i>child elements</i> in het <i>grid</i> vast te zetten.
+                    <li><code id="michelle-aspect-ratio">aspect-ratio:</code> en <code id="michelle-object-fit">object-fit:</code> zijn een krachtige combinatie om de volledige controle over de verhouding van een afbeelding met stijling te bepalen. In een <i>grid</i> kan <code>aspect-ratio:</code> ook gebruikt worden om de verhoudingen van de <i>child elements</i> in het <i>grid</i> vast te zetten.
                         <div class="highlight highlight--reference">
                             Voorbeeld: <a href="https://codepen.io/michellebarker/pen/YzeqRrP" target="_blank">aspect-ratio grids @ Codepen</a>
                         </div>
                     </li>
-                    <li><code>auto-fit</code> en <code>auto-fill</code> voor <code>grid-template-columns:</code> om kolommen te herhalen en breedte ervan automatisch aan te laten passen aan de beschikbare ruimte tot een minimale breedte van een kolom.
+                    <li><code id="michelle-auto-fit">auto-fit</code> en <code id="michelle-auto-fill">auto-fill</code> voor <code>grid-template-columns:</code> om kolommen te herhalen en breedte ervan automatisch aan te laten passen aan de beschikbare ruimte tot een minimale breedte van een kolom.
                         <div class="highlight highlight--reference">
                             Voorbeeld: <a href="https://codepen.io/michellebarker/pen/BaYmNgN" target="_blank">auto-fit/auto-fill @ Codepen</a>
                         </div>
                     </li>
-                    <li>Quantity queries met <code>@container</code> om de flexibliteit van de layout nog meer tot in detail te bepalen.
+                    <li id="michelle-container-queries">Container queries met <code>@container</code> om de flexibliteit van de layout nog meer tot in detail te bepalen.
                         <div class="highlight highlight--reference">
                             Voorbeeld: <a href="https://codepen.io/michellebarker/pen/OJQpVKE" target="_blank">Grid with container queries @ Codepen</a><br> <strong class="text-sm">Let op check <a href="https://caniuse.com/css-container-queries" target="_blank">Can I Use Container Queries</a> voor de browser ondersteuning</strong>
                         </div>
                     </li>
-                    <li>Relative units voor <code>@container</code>, welke specifieker zijn voor de flexibele groottes van een of meer elementen in een <code>@container</code>: 
+                    <li id="michelle-relative-units">Relative units voor <code>@container</code>, welke specifieker zijn voor de flexibele groottes van een of meer elementen in een <code>@container</code>: 
                         <ul>
                             <li><code>cqw</code>, query unit voor de container breedte</li>
                             <li><code>cqh</code>, query unit voor de container hoogte</li>
@@ -277,7 +277,7 @@
                             <strong class="text-sm">Let op check <a href="https://caniuse.com/css-container-query-units" target="_blank">Can I Use Container Query Units</a> voor de browser ondersteuning</strong>
                         </div>
                     </li>
-                    <li>
+                    <li id="michelle-has">
                         <code>:has()</code> de parent selector pseudo-class.
                         <div class="highlight highlight--reference">
                             Voorbeeld: <a href="https://codepen.io/michellebarker/pen/qBxELqY" target="_blank">:has() and quantity queries @ Codepen</a><br> <strong class="text-sm">Let op check <a href="https://caniuse.com/css-has" target="_blank">Can I Use :has()</a> voor de browser ondersteuning</strong>
@@ -440,7 +440,7 @@
 
                 <p>Maike is werkzaam als UX Researcher en is daarnaast <a href="https://www.maikeklip.nl/" target="_blank">freelance fotograaf</a>. In haar rol als UX Researcher heeft Maike diverse onderzoeken bij de overheid gedaan:</p> 
                 
-                <ul>
+                <ul id="maike-ux-research">
                     <li>Bij DUO de digitale verbinding tussen DUO en burgers onderzocht. met  <a href="https://debegripvolleambtenaar.nl/" target="_blank">De Begripvolle Ambtenaar</a> als een van de onderzoeksresultaten.</li>
                     <li>Voor het notificatie-systeem van de CoronaMelder app het werk- en systeemprocessen van de GGD in kaart gebracht.</li>
                     <li>Bij de Nationale ombudsman onderzoek gedaan naar hoe de overheid een betere partner van de burger kan zijn.</li>
@@ -448,23 +448,23 @@
 
                 <p>Met al deze kennis en ervaring ging de talk van Maike daarom ook over <strong>dark patterns</strong> en over het belang van <strong>gezamenlijke empathie</strong> in digitale samenleving.</p>
 
-                <h3>Dark patterns bij de overheid</h3>
+                <h3 id="maike-dark-patterns">Dark patterns bij de overheid</h3>
 
                 <p>Maike nam ons mee aan de hand van een aantal projecten waar zij bij betrokken is geweest om de <strong>dark patterns</strong> van de overheid uit te lichten.</p>
 
-                <h5>DUO</h5>
+                <h5 id="maike-duo">DUO</h5>
 
                 <p>De overheid komt door de digitalisering steeds meer en meer over als een computer door de digitalsering en de ingewikkelde systemen en processen terwijl de uitvoering bij de overheid ook door mensen wordt gedaan. Bij DUO onderzocht Maike daarom de afstand tussen medewerkers en de burgers.</p>
                 
                 <p>In een filmpje liet Maike zien hoe zij dat deed met een interactief onderzoek in de praktijk voor een persoonlijke beandering en spontane antwoorden. Dit deed zij bijvoorbeeld door een lang touw aan haar vast te binden en de vraag te stellen aan een medewerker bij DUO of een burger op straat om de afstand tussen overheid en burger visueel te maken aan de hand van de lengte van het touw.</p>
 
-                <h5>Toeslagenaffaire</h5>
+                <h5 id="maike-toeslagenaffaire">Toeslagenaffaire</h5>
 
                 <p>Maike heeft samengewerkt met Janet Ramesar, een van de toeslagenaffaire slachtoffers, om inzicht te krijgen in de overheid. Hiervoor heeft Maike al haar interacties, als burger en niet als UX Researcher, met de overheid in kaart gebracht in dit <a href="https://miro.com/app/board/o9J_lcpygEU=/" target="_blank">Miro board</a>.</p>
                 
                 <p>Vervolgens identificeerde Maike de systemen die erbij betrokken waren en welke teams er achter die systemen zitten. Wat resulteerde in een complexe verstrengeling van teams en systemen. Wat voor een conclusie zorgt dat het lastig is om aanpassingen door te voeren over de gehele linie van de overheid.</p>
 
-                <h5>Groningen</h5>
+                <h5 id="maike-groningen">Groningen</h5>
 
                 <p>Eerst liet Maike ons een <a href="https://dwarshuis.com/aardbevingen-groningen/visualisatie/view/?lang=nl" target="_blank">geanimeerde datavisualisatie</a> zien van de aardbevingen door gasboringen in Groningen. Wat voor veel materiële als mentale schade heeft gezorgd bij huiseigenaren in het aardbevingsgebied. Om de materiële schade te compenseren konden eigenaren van huizen in het aardbevingsgebied, die geen onderdeel zijn van het versterkingsprogramma van Nationaal Coördinator Groningen, begin dit jaar een subsidie van maximaal 10.000 euro aanvragen. Bij deze aanvragen ging van alles mis:</p>
 
@@ -532,7 +532,7 @@
 
                 <p>Tab stond op dag 1 van CSSday 2022 als MC op het podium en op dag 2 heeft hij zijn eigen talk wat over de toekomst van het organiseren van de styling gaat. In zijn talk heeft hij het over de <strong>Shadow DOM</strong> met het bijbehorende <i>pseudo-element</i> <code>::part()</code> en gaat hij dieper in op de nieuwe CSS modules <strong>Nesting</strong> en <strong>Scoping</strong> met de voordelen en laat daarbij meteen een aantal voorbeelden zien.</p>
 
-                <h3>Shadow DOM</h3>
+                <h3 id="tab-shadow-dom">Shadow DOM</h3>
 
                 <p>Een probleem waar je tegenaan kan lopen is dat webpagina's en CSS steeds groter worden. De prestaties van een website en een webpagina in het specifiek kan hierdoor negatief worden beïnvloed. De prestaties van CSS worden bepaald door de <i>DOM size</i> * aantal <i>CSS-selectors</i>. Door gebruik te maken van de Shadow DOM, waardoor je delen van een webpagina gaat opdelen in kleine stukjes, optimaliseer je de prestatie van de CSS.</p>
 
@@ -547,7 +547,7 @@
                     </figure>
                 </div>
 
-                <h3>Scoping</h3>
+                <h3 id="tab-scoping">Scoping</h3>
 
                 <p>Een CSS module in ontwikkeling waardoor je de styling kan beperken tot een specifiek element wat bijvoorbeeld handig is voor thema's en donker vs light contrast elementen.</p>
 
@@ -560,7 +560,7 @@
                     <a href="https://www.w3.org/TR/css-cascade-6/#scoped-styles" target="_blank">CSS Cascading and Inheritance Level 6: 2.5 Scope Styles @ w3.org</a>
                 </div>
 
-                <h3>Nesting</h3>
+                <h3 id="tab-nesting">Nesting</h3>
 
                 <p>Een CSS module in ontwikkeling waardoor je de styling bijna net zo kan nesten als in Sass. Er zijn wel een aantal verschillen een daarvan is dat je gebruikt maakt van <code>&</code> of vanwege de <i>CSS-parsing</i> complexiteit zelfs <code>@nest &</code>. Mede daardoor is alle feedback welkom, zie <a href="https://github.com/w3c/csswg-drafts/issues/4748" target="_blank">w3c / csswg-drafts: [css-nesting] Syntax suggestion #4748</a>.</p>
 
@@ -623,6 +623,8 @@
                 
                 <p>Met zijn eigen bedrijf Zero Interface heeft hij gewerkt voor bedrijven als het Ministerie van Binnenlandse Zaken, Ministerie van Financiën, Nuon/Vattenfall en Zalando. Nu is sinds 2019 werkzaam als Creative Director bij de Rabobank.</p>
 
+                <h3>Is een Design System een holy bible?</h3>
+
                 <p>De talk van Stephan gaat over design systems en of dit nou wel of niet de <strong>holy bible</strong> voor design moeten zijn.</p>
 
                 <blockquote>
@@ -630,9 +632,13 @@
                     <cite>Stephan Hay</cite>
                 </blockquote>
 
-                <p>Met de bovenstaande vraag als startpunt begint Stephan zijn talk door een aantal leugens te benoemen en deze te onderbouwen. Zo worden in Design Systems meestal aan de hand van de <a href="https://atomicdesign.bradfrost.com/chapter-2/">Atomic Design Methodology</a> <strong>atoms</strong>, <strong>molecules</strong>, <strong>organisms</strong>, <strong>templates</strong> en <strong>pages</strong> de design richtlijnen vastgelegd en wordt dat te letterlijk als gebruiksaanwijzing gebruikt. Design kan nooit daadwerkelijk vastleggen worden, want dat beperkt je. Design kan altijd verbeterd worden, is ook beinvloedbaar voor trends en dat er door techniek meer mogelijk wordt of het daardoor anders is toe te passen.</p>
+                <p id="stephan-design-systems-lies">Met de bovenstaande vraag als startpunt begint Stephan zijn talk door een aantal leugens te benoemen en deze te onderbouwen. Zo worden in Design Systems meestal aan de hand van de <a href="https://atomicdesign.bradfrost.com/chapter-2/">Atomic Design Methodology</a> <strong>atoms</strong>, <strong>molecules</strong>, <strong>organisms</strong>, <strong>templates</strong> en <strong>pages</strong> de design richtlijnen vastgelegd en wordt dat te letterlijk als gebruiksaanwijzing gebruikt.</p>
+                
+                <h5 id="stephan-design-changes-continuously">Design verandert continu</h5>
 
-                <h3>Samen invloed op design keuzes</h3>
+                <p>Design kan nooit daadwerkelijk vastleggen worden, want dat beperkt je. Design kan altijd verbeterd worden, is ook beinvloedbaar voor trends en dat er door techniek meer mogelijk wordt of het daardoor anders is toe te passen.</p>
+
+                <h3 id="stephan-design-decisions">Samen invloed op design keuzes</h3>
                 
                 <p>Het is daarom volgens Stephan ook van belang dat <strong>developers en designers</strong> met elkaar blijven <strong>praten en sparren</strong> om nieuwe mogelijkheden binnen CSS te ontdekken en die van <strong>invloed</strong> kunnen zijn <strong></strong>op design keuzes</strong>.</p>
 
@@ -643,7 +649,7 @@
                     </figure>
                 </div>
 
-                <blockquote>
+                <blockquote id="stephan-loius-kahn-quote">
                     “Design is not making beauty;<br>beauty emerges from selection, affinities, intergration, love.”
                     <cite>Louis Kahn</cite>
                 </blockquote>
