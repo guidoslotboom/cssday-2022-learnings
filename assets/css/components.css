@@ -83,6 +83,7 @@
 .talk.tile:hover {
     background-color: var(--bg-color-primary);
     border: 0.2rem dashed var(--bg-color-light);
+    transition: background-color 0.1s ease-out, border 0.15s ease-out;
 }
 
 .talk.tile:hover .talk__speaker {
@@ -92,6 +93,7 @@
 .talk.tile:hover .speaker__image:after {
     background-color: rgba(60,179,113,0);
     filter: contrast(100%) brightness(92%);
+    transition: background-color 0.15s ease-out;
 }
 
 .talk.tile:hover .speaker__image img {
@@ -211,10 +213,24 @@
     color: var(--color-secondary-darker);
 }
 
+.talk__tags a {
+    transition: background-color 0.1s ease-out, color 0.15s ease-out;
+}
+
 .talk__tags a:link,
 .talk__tags a:visited {
     background-color: var(--color-primary-lighter);
     color: var(--color-primary-darker);
+}
+
+.talk__tags a:hover {
+    background-color: var(--color-primary-darker);
+    color: var(--color-secondary-lighter);
+}
+
+.talk__tags a:active {
+    background-color: var(--color-primary-dark);
+    color: var(--color-secondary-light);
 }
 
 /*****

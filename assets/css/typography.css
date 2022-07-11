@@ -69,6 +69,7 @@ i {
 a:link,
 a:visited {
     color: var(--color-primary-dark);
+    transition: color 0.1s ease-out;
 }
 
 a:hover {
